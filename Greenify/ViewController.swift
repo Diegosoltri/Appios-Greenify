@@ -14,6 +14,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func handleSwipe(_ sender: UISwipeGestureRecognizer) {
+        if sender.direction == .left {
+            performSegue(withIdentifier: "Camino1", sender: self)
+        }
+    }
+    
 }
 

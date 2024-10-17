@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>390208176910-2qof4kqdbs4lf26sgf0sc5g4vd716fdj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.390208176910-2qof4kqdbs4lf26sgf0sc5g4vd716fdj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA5P1vqIIGQCp3P5X2iCU81PzNSvikMN50</string>
+	<key>GCM_SENDER_ID</key>
+	<string>390208176910</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>mx.tec.a01808035.Greenify</string>
+	<key>PROJECT_ID</key>
+	<string>fir-greenify</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fir-greenify.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:390208176910:ios:a2c9e4f80eab166e588d5f</string>
+	<key>DATABASE_URL</key>
+	<string>https://fir-greenify-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
