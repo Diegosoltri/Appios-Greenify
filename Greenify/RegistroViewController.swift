@@ -31,8 +31,14 @@ class RegistroViewController: UIViewController {
                 (result, error) in
                 if let result = result, error == nil {
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    if let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController {
-                        self.navigationController?.pushViewController(homeViewController, animated: true)
+                    if let tabBarController = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as? UITabBarController {
+                        
+                        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                           let window = windowScene.windows.first {
+                           // Reemplazar la raíz de la ventana con el Tab Bar Controller
+                            window.rootViewController = tabBarController
+                            window.makeKeyAndVisible()
+                        }
                     }
                                         
                 } else {
@@ -79,8 +85,16 @@ class RegistroViewController: UIViewController {
                     
                 // Usuario autenticado correctamente, redirigir a la pantalla principal
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                if let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController {
-                    self.navigationController?.pushViewController(homeViewController, animated: true)
+                if let tabBarController = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as? UITabBarController {
+                    
+                    if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                       let window = windowScene.windows.first {
+                       // Reemplazar la raíz de la ventana con el Tab Bar Controller
+                        window.rootViewController = tabBarController
+                        window.makeKeyAndVisible()
+                    }
+                    
+                    
                     }
                 }
             }

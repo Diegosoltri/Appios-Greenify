@@ -9,4 +9,10 @@ import UIKit
 
 class CarrucelCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var buttonView: UIButton!
+    
+    
+    func setup(with actividades: Actividades){
+        buttonView.setTitle(actividades.tittle, for: .normal)
+    }
 }

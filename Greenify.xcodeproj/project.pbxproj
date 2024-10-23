@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1F1F97282CC09A4800544F4F /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 1F1F97272CC09A4800544F4F /* GoogleSignIn */; };
 		1F1F972A2CC09A4800544F4F /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1F1F97292CC09A4800544F4F /* GoogleSignInSwift */; };
+		1F4E07BA2CC7655800F74115 /* CarrucelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E07B92CC7655800F74115 /* CarrucelCollectionViewCell.swift */; };
+		1F4E07BC2CC76E4C00F74115 /* Actividades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E07BB2CC76E4C00F74115 /* Actividades.swift */; };
 		1F51C2C52CB63D5200F392CD /* CreacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51C2C42CB63D5200F392CD /* CreacionViewController.swift */; };
 		1F51C2C72CB63EF600F392CD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51C2C62CB63EF600F392CD /* HomeViewController.swift */; };
 		1F51C2CB2CB6427D00F392CD /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 1F51C2CA2CB6427D00F392CD /* FirebaseAppDistribution-Beta */; };
@@ -38,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F4E07B92CC7655800F74115 /* CarrucelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrucelCollectionViewCell.swift; sourceTree = "<group>"; };
+		1F4E07BB2CC76E4C00F74115 /* Actividades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actividades.swift; sourceTree = "<group>"; };
 		1F51C2C42CB63D5200F392CD /* CreacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreacionViewController.swift; sourceTree = "<group>"; };
 		1F51C2C62CB63EF600F392CD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1F5CFF8B2C8637AF003A90C5 /* Greenify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Greenify.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,10 +113,12 @@
 				1F51C2C42CB63D5200F392CD /* CreacionViewController.swift */,
 				1F8321BF2CB5D86600F8D474 /* UsuarioViewController.swift */,
 				1F7A756F2CB3C3B0000029C6 /* RegistroViewController.swift */,
+				1F4E07BB2CC76E4C00F74115 /* Actividades.swift */,
 				1F7A756D2CB3C376000029C6 /* IntroViewController.swift */,
 				1F5CFF992C8637B1003A90C5 /* LaunchScreen.storyboard */,
 				1FA18A552CC0C63200DE659A /* GoogleService-Info.plist */,
 				1F5CFF9C2C8637B1003A90C5 /* Info.plist */,
+				1F4E07B92CC7655800F74115 /* CarrucelCollectionViewCell.swift */,
 			);
 			path = Greenify;
 			sourceTree = "<group>";
@@ -199,8 +205,10 @@
 				1F51C2C72CB63EF600F392CD /* HomeViewController.swift in Sources */,
 				1F7A756E2CB3C376000029C6 /* IntroViewController.swift in Sources */,
 				1F51C2C52CB63D5200F392CD /* CreacionViewController.swift in Sources */,
+				1F4E07BA2CC7655800F74115 /* CarrucelCollectionViewCell.swift in Sources */,
 				1F7A75702CB3C3B0000029C6 /* RegistroViewController.swift in Sources */,
 				1F8321C02CB5D86600F8D474 /* UsuarioViewController.swift in Sources */,
+				1F4E07BC2CC76E4C00F74115 /* Actividades.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
