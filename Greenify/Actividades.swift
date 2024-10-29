@@ -15,9 +15,9 @@ let actividades: [Actividades] = [
     Actividades(tittle: "Todos"),
     Actividades(tittle: "Movilidad"),
     Actividades(tittle: "Reciclado"),
-    Actividades(tittle: "Cuidado del agua"),
-    Actividades(tittle: "Reciclado"),
-    Actividades(tittle: "Reciclado"),
+    Actividades(tittle: "Reutilización"),
+    Actividades(tittle: "Limpieza"),
+    Actividades(tittle: "Conservación"),
     Actividades(tittle: "Reciclado"),
     Actividades(tittle: "Reciclado")
 ]
