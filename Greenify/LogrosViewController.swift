@@ -1,29 +1,37 @@
 //
 //  LogrosViewController.swift
 //  Greenify
-//
+//          
 //  Created by Jose Galindo on 04/11/24.
 //
 
 import UIKit
 
 class LogrosViewController: UIViewController {
-
+    
+    @IBOutlet weak var LogrosDesbloqueados: UIView!
+    @IBOutlet weak var LogrosTodos: UIView!
+    @IBOutlet weak var LogrosProximos: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+ 
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func switchViews(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            LogrosDesbloqueados.alpha = 1
+            LogrosProximos.alpha = 0
+            LogrosTodos.alpha = 0
+        } else if sender.selectedSegmentIndex == 1 {
+            LogrosDesbloqueados.alpha = 0
+            LogrosProximos.alpha = 1
+            LogrosTodos.alpha = 0
+        }else if sender.selectedSegmentIndex == 2{
+            LogrosDesbloqueados.alpha = 0
+            LogrosProximos.alpha = 0
+            LogrosTodos.alpha = 1
+        }
     }
-    */
-
 }
