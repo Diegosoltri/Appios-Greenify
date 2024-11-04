@@ -9,9 +9,24 @@ import UIKit
 
 class PerfilViewController: UIViewController {
 
+    @IBOutlet weak var followButton: UIButton!
+    @IBOutlet weak var following: UILabel!
+    @IBOutlet weak var followers: UILabel!
+    @IBOutlet weak var location: UIStackView!
+    @IBOutlet weak var birthday: UILabel!
+    @IBOutlet weak var career: UILabel!
+    @IBOutlet weak var name: UIStackView!
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var topBackgroundView: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
+        profileImage.clipsToBounds = true
+        profileImage.contentMode = .scaleAspectFill
+        
         // Do any additional setup after loading the view.
     }
     
