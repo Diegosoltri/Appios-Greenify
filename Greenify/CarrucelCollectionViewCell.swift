@@ -7,9 +7,16 @@
 
 import UIKit
 
+// Protocolo para notificar al delegado sobre la selección del botón
+protocol CarrucelCollectionViewCellDelegate: AnyObject {
+    func didTapButton(with actividad: Actividades)
+}
+
 class CarrucelCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var buttonView: UIButton!
+    weak var delegate: CarrucelCollectionViewCellDelegate? // Delegado para notificar la selección
+    private var actividad: Actividades? // Almacena la actividad actual
     
     static var lastSelectedCell: CarrucelCollectionViewCell? // Referencia estática a la última celda seleccionada
     
@@ -37,6 +44,7 @@ class CarrucelCollectionViewCell: UICollectionViewCell {
     }
     
     func setup(with actividades: Actividades) {
+        self.actividad = actividades
         buttonView.setTitle(actividades.tittle, for: .normal)
         resetButtonAppearance() // Restablecer la apariencia del botón al estado original cuando no está seleccionado
     }
@@ -45,6 +53,10 @@ class CarrucelCollectionViewCell: UICollectionViewCell {
         CarrucelCollectionViewCell.lastSelectedCell?.resetButtonAppearance() // Restablecer la última celda seleccionada
         CarrucelCollectionViewCell.lastSelectedCell = self // Actualizar la referencia a la celda actual
         styleButton(isSelected: true) // Establecer estilo de selección
+        // NoTIFICAR EL DELEGADO SOBRE LA ACTIVIDAD SELECCIONADA
+        if let actividad = actividad {
+            delegate?.didTapButton(with: actividad)
+        }
     }
     
     // Actualizar el estilo del botón según su estado de selección
