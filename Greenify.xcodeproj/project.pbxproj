@@ -39,6 +39,8 @@
 		1F8321C02CB5D86600F8D474 /* UsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8321BF2CB5D86600F8D474 /* UsuarioViewController.swift */; };
 		1FB46F0A2CD98C0D005D452C /* ImageActividades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB46F092CD98C0D005D452C /* ImageActividades.swift */; };
 		1FF130BA2CD9793D00D6757A /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF130B92CD9793D00D6757A /* MainCollectionViewCell.swift */; };
+		649A7A1C2CD93A5B0017A2BF /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A7A1B2CD93A5B0017A2BF /* PerfilViewController.swift */; };
+		649A7A2E2CD966970017A2BF /* LogrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A7A2D2CD966970017A2BF /* LogrosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		1FA18A552CC0C63200DE659A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1FB46F092CD98C0D005D452C /* ImageActividades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageActividades.swift; sourceTree = "<group>"; };
 		1FF130B92CD9793D00D6757A /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		649A7A1B2CD93A5B0017A2BF /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		649A7A2D2CD966970017A2BF /* LogrosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogrosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				1F5CFF972C8637B1003A90C5 /* Assets.xcassets */,
 				1F5CFF942C8637AF003A90C5 /* Main.storyboard */,
 				1FF130B92CD9793D00D6757A /* MainCollectionViewCell.swift */,
+				649A7A2D2CD966970017A2BF /* LogrosViewController.swift */,
+				649A7A1B2CD93A5B0017A2BF /* PerfilViewController.swift */,
 				1F51C2C62CB63EF600F392CD /* HomeViewController.swift */,
 				1FB46F092CD98C0D005D452C /* ImageActividades.swift */,
 				1F51C2C42CB63D5200F392CD /* CreacionViewController.swift */,
@@ -212,6 +218,8 @@
 				1F51C2C72CB63EF600F392CD /* HomeViewController.swift in Sources */,
 				1F7A756E2CB3C376000029C6 /* IntroViewController.swift in Sources */,
 				1F51C2C52CB63D5200F392CD /* CreacionViewController.swift in Sources */,
+				649A7A2E2CD966970017A2BF /* LogrosViewController.swift in Sources */,
+				649A7A1C2CD93A5B0017A2BF /* PerfilViewController.swift in Sources */,
 				1F4E07BA2CC7655800F74115 /* CarrucelCollectionViewCell.swift in Sources */,
 				1FF130BA2CD9793D00D6757A /* MainCollectionViewCell.swift in Sources */,
 				1F7A75702CB3C3B0000029C6 /* RegistroViewController.swift in Sources */,
