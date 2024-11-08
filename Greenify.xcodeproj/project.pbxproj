@@ -24,6 +24,7 @@
 		1F51C2DB2CB6427D00F392CD /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 1F51C2DA2CB6427D00F392CD /* FirebaseFirestoreCombine-Community */; };
 		1F51C2DD2CB6427D00F392CD /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 1F51C2DC2CB6427D00F392CD /* FirebaseFunctions */; };
 		1F51C2DF2CB6427D00F392CD /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 1F51C2DE2CB6427D00F392CD /* FirebaseFunctionsCombine-Community */; };
+		1F5519ED2CDE73BC002F168C /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5519EC2CDE73BC002F168C /* ActivityDetailViewController.swift */; };
 		1F5CFF8F2C8637AF003A90C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5CFF8E2C8637AF003A90C5 /* AppDelegate.swift */; };
 		1F5CFF912C8637AF003A90C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5CFF902C8637AF003A90C5 /* SceneDelegate.swift */; };
 		1F5CFF932C8637AF003A90C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5CFF922C8637AF003A90C5 /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 		1F4E07BB2CC76E4C00F74115 /* Actividades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actividades.swift; sourceTree = "<group>"; };
 		1F51C2C42CB63D5200F392CD /* CreacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreacionViewController.swift; sourceTree = "<group>"; };
 		1F51C2C62CB63EF600F392CD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1F5519EC2CDE73BC002F168C /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
 		1F5CFF8B2C8637AF003A90C5 /* Greenify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Greenify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5CFF8E2C8637AF003A90C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F5CFF902C8637AF003A90C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				649A7A2D2CD966970017A2BF /* LogrosViewController.swift */,
 				649A7A1B2CD93A5B0017A2BF /* PerfilViewController.swift */,
 				1F51C2C62CB63EF600F392CD /* HomeViewController.swift */,
+				1F5519EC2CDE73BC002F168C /* ActivityDetailViewController.swift */,
 				1FB46F092CD98C0D005D452C /* ImageActividades.swift */,
 				1F51C2C42CB63D5200F392CD /* CreacionViewController.swift */,
 				1F8321BF2CB5D86600F8D474 /* UsuarioViewController.swift */,
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5519ED2CDE73BC002F168C /* ActivityDetailViewController.swift in Sources */,
 				1F5CFF932C8637AF003A90C5 /* ViewController.swift in Sources */,
 				1FB46F0A2CD98C0D005D452C /* ImageActividades.swift in Sources */,
 				1F5CFF8F2C8637AF003A90C5 /* AppDelegate.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, CarrucelCollectionViewCellDelegate {
+class HomeViewController: UIViewController, CarrucelCollectionViewCellDelegate, MainCollectionViewCellDelegate {
     
     @IBOutlet weak var MaincollectionView: UICollectionView!
     
@@ -43,6 +43,15 @@ class HomeViewController: UIViewController, CarrucelCollectionViewCellDelegate {
     func didTapButton(with actividad: Actividades) {
         filterImages(for: actividad.tittle)
     }
+    
+    // Método delegado para mostrar el modal con la información de actividad
+    func didTapInfoButton(for actividad: Imageactividades) {
+        // Crear una instancia de la vista de detalles y pasar la actividad
+        let detailVC = ActivityDetailViewController()
+        detailVC.actividad = actividad
+        present(detailVC, animated: true, completion: nil)
+    }
+    
     // Filtra las imágenes según la categoría seleccionada
     private func filterImages(for category: String) {
         switch category {
@@ -76,6 +85,7 @@ extension HomeViewController: UICollectionViewDataSource {
         if collectionView == MaincollectionView {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainCollectionViewCell", for: indexPath) as! MainCollectionViewCell
             cell.setup(with: filteredImageActividades[indexPath.row])
+            cell.delegate = self // Asigna el delegado
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CarrucelCollectionViewCell", for: indexPath) as! CarrucelCollectionViewCell
@@ -91,7 +101,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         if collectionView == MaincollectionView {
             let padding: CGFloat = 10 // Ajusta este valor según el espaciado deseado
             let cellWidth = (MaincollectionView.bounds.width - padding) / 2 // Dividir el ancho entre dos columnas
-            return CGSize(width: cellWidth, height: 300) // Ajusta la altura según lo necesites
+            return CGSize(width: cellWidth, height: 250) // Ajusta la altura según lo necesites
         } else {
             let numberOfItemsPerRow: CGFloat = 3 // Número de celdas que deseas en la fila
             let padding: CGFloat = 10 * (numberOfItemsPerRow - 1)
@@ -102,7 +112,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         if collectionView == MaincollectionView {
-            return 30
+            return 40
         }
         return 0
     }
