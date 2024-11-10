@@ -106,7 +106,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
             let numberOfItemsPerRow: CGFloat = 3 // Número de celdas que deseas en la fila
             let padding: CGFloat = 10 * (numberOfItemsPerRow - 1)
             let cellWidth = (collectionView.bounds.width - padding) / numberOfItemsPerRow
-            return CGSize(width: cellWidth, height: 55)
+            return CGSize(width: cellWidth, height: 65)
         }
     }
     

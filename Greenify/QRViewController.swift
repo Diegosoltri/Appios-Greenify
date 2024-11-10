@@ -15,6 +15,15 @@ class QRViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func scanQRCode(_ sender: UIButton) {
+        // Crear una instancia de QRScannerViewController
+        let qrScannerVC = QRScannerViewController()
+        // Presentar el escáner QR de manera modal
+        present(qrScannerVC, animated: true, completion: nil)
+    }
+}
+    
 
     /*
     // MARK: - Navigation
@@ -26,4 +35,4 @@ class QRViewController: UIViewController {
     }
     */
 
-}
+

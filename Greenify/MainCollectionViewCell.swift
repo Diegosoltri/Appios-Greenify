@@ -27,6 +27,10 @@ class MainCollectionViewCell: UICollectionViewCell {
         self.actividad = imageactividades
         mainImageView.image = imageactividades.image
         mainLabel.text = imageactividades.tittle
+        
+        // Redondear esquinas de la imagen
+        mainImageView.layer.cornerRadius = 10 // Ajusta este valor al radio deseado
+        mainImageView.clipsToBounds = true
     }
     
     @IBAction func mainButtonTapped(_ sender: UIButton) {

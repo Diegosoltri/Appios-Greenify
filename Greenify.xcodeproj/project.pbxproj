@@ -38,6 +38,10 @@
 		1F7A75772CB5CC60000029C6 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 1F7A75762CB5CC60000029C6 /* FirebaseAnalyticsOnDeviceConversion */; };
 		1F7A75792CB5CC60000029C6 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 1F7A75782CB5CC60000029C6 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		1F8321C02CB5D86600F8D474 /* UsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8321BF2CB5D86600F8D474 /* UsuarioViewController.swift */; };
+		1F9301102CDEE73000E6EFB9 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 1F93010F2CDEE73000E6EFB9 /* CodeScanner */; };
+		1F9301122CDEE86900E6EFB9 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9301112CDEE86900E6EFB9 /* SwiftUIView.swift */; };
+		1F9301162CDEEADE00E6EFB9 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9301152CDEEADE00E6EFB9 /* QRScannerViewController.swift */; };
+		1F9301182CDF26AE00E6EFB9 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9301172CDF26AE00E6EFB9 /* QRViewController.swift */; };
 		1FB46F0A2CD98C0D005D452C /* ImageActividades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB46F092CD98C0D005D452C /* ImageActividades.swift */; };
 		1FF130BA2CD9793D00D6757A /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF130B92CD9793D00D6757A /* MainCollectionViewCell.swift */; };
 		649A7A1C2CD93A5B0017A2BF /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A7A1B2CD93A5B0017A2BF /* PerfilViewController.swift */; };
@@ -61,6 +65,9 @@
 		1F7A756D2CB3C376000029C6 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		1F7A756F2CB3C3B0000029C6 /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		1F8321BF2CB5D86600F8D474 /* UsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioViewController.swift; sourceTree = "<group>"; };
+		1F9301112CDEE86900E6EFB9 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		1F9301152CDEEADE00E6EFB9 /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		1F9301172CDF26AE00E6EFB9 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		1FA18A552CC0C63200DE659A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1FB46F092CD98C0D005D452C /* ImageActividades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageActividades.swift; sourceTree = "<group>"; };
 		1FF130B92CD9793D00D6757A /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -80,6 +87,7 @@
 				1F51C2D72CB6427D00F392CD /* FirebaseDynamicLinks in Frameworks */,
 				1F51C2CD2CB6427D00F392CD /* FirebaseAuth in Frameworks */,
 				1F1F97282CC09A4800544F4F /* GoogleSignIn in Frameworks */,
+				1F9301102CDEE73000E6EFB9 /* CodeScanner in Frameworks */,
 				1F7A75752CB5CC60000029C6 /* FirebaseAnalytics in Frameworks */,
 				1F51C2D92CB6427D00F392CD /* FirebaseFirestore in Frameworks */,
 				1F51C2DF2CB6427D00F392CD /* FirebaseFunctionsCombine-Community in Frameworks */,
@@ -119,6 +127,9 @@
 				1F5CFF922C8637AF003A90C5 /* ViewController.swift */,
 				1F5CFF972C8637B1003A90C5 /* Assets.xcassets */,
 				1F5CFF942C8637AF003A90C5 /* Main.storyboard */,
+				1F9301112CDEE86900E6EFB9 /* SwiftUIView.swift */,
+				1F9301152CDEEADE00E6EFB9 /* QRScannerViewController.swift */,
+				1F9301172CDF26AE00E6EFB9 /* QRViewController.swift */,
 				1FF130B92CD9793D00D6757A /* MainCollectionViewCell.swift */,
 				649A7A2D2CD966970017A2BF /* LogrosViewController.swift */,
 				649A7A1B2CD93A5B0017A2BF /* PerfilViewController.swift */,
@@ -185,6 +196,7 @@
 			packageReferences = (
 				1F7A75732CB5CC60000029C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				1F1F97262CC09A4800544F4F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				1F93010E2CDEE73000E6EFB9 /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = 1F5CFF8C2C8637AF003A90C5 /* Products */;
 			projectDirPath = "";
@@ -216,8 +228,10 @@
 			files = (
 				1F5519ED2CDE73BC002F168C /* ActivityDetailViewController.swift in Sources */,
 				1F5CFF932C8637AF003A90C5 /* ViewController.swift in Sources */,
+				1F9301122CDEE86900E6EFB9 /* SwiftUIView.swift in Sources */,
 				1FB46F0A2CD98C0D005D452C /* ImageActividades.swift in Sources */,
 				1F5CFF8F2C8637AF003A90C5 /* AppDelegate.swift in Sources */,
+				1F9301182CDF26AE00E6EFB9 /* QRViewController.swift in Sources */,
 				1F5CFF912C8637AF003A90C5 /* SceneDelegate.swift in Sources */,
 				1F51C2C72CB63EF600F392CD /* HomeViewController.swift in Sources */,
 				1F7A756E2CB3C376000029C6 /* IntroViewController.swift in Sources */,
@@ -225,6 +239,7 @@
 				649A7A2E2CD966970017A2BF /* LogrosViewController.swift in Sources */,
 				649A7A1C2CD93A5B0017A2BF /* PerfilViewController.swift in Sources */,
 				1F4E07BA2CC7655800F74115 /* CarrucelCollectionViewCell.swift in Sources */,
+				1F9301162CDEEADE00E6EFB9 /* QRScannerViewController.swift in Sources */,
 				1FF130BA2CD9793D00D6757A /* MainCollectionViewCell.swift in Sources */,
 				1F7A75702CB3C3B0000029C6 /* RegistroViewController.swift in Sources */,
 				1F8321C02CB5D86600F8D474 /* UsuarioViewController.swift in Sources */,
@@ -380,13 +395,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S9FC3MRQ8Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Greenify/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Deseas permitir utilizar la camara ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -407,13 +425,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S9FC3MRQ8Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Greenify/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Deseas permitir utilizar la camara ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,6 +486,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 11.3.0;
+			};
+		};
+		1F93010E2CDEE73000E6EFB9 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -549,6 +578,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1F7A75732CB5CC60000029C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		1F93010F2CDEE73000E6EFB9 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F93010E2CDEE73000E6EFB9 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

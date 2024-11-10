@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZiM-VX-pnO">
-    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -15,14 +15,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Greenify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="ze1-T5-Twr">
-                                <rect key="frame" x="0.0" y="106" width="440" height="816"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RjU-FP-IWa">
-                                        <rect key="frame" x="49.333333333333343" y="0.0" width="341.33333333333326" height="431.33333333333331"/>
+                                        <rect key="frame" x="26" y="0.0" width="341.33333333333337" height="431.33333333333331"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="1024" translatesAutoresizingMaskIntoConstraints="NO" id="kqz-H3-IfI">
                                                 <rect key="frame" x="0.0" y="0.0" width="341.33333333333331" height="341.33333333333331"/>
@@ -42,28 +42,28 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="lWh-4H-0sw">
-                                        <rect key="frame" x="62" y="511.33333333333331" width="316.33333333333331" height="204.33333333333331"/>
+                                        <rect key="frame" x="38.333333333333343" y="511.33333333333331" width="316.33333333333326" height="103.33333333333331"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKq-6E-0dj">
-                                                <rect key="frame" x="0.0" y="92.666666666666629" width="90" height="19"/>
+                                                <rect key="frame" x="0.0" y="42.333333333333258" width="90" height="19"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecoespacio" translatesAutoresizingMaskIntoConstraints="NO" id="GIY-Qu-Szh">
-                                                <rect key="frame" x="93.000000000000014" y="39.999999999999993" width="223.33333333333337" height="124.33333333333331"/>
+                                                <rect key="frame" x="93.000000000000014" y="0.0" width="223.33333333333337" height="103.33333333333333"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Dve-Hs-kga">
-                                        <rect key="frame" x="188.66666666666666" y="795.66666666666663" width="63" height="20.333333333333371"/>
+                                        <rect key="frame" x="165" y="694.66666666666663" width="63" height="20.333333333333371"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circlebadge.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rR3-2p-8VO">
                                                 <rect key="frame" x="0.0" y="2.6666666666666661" width="15.666666666666666" height="14.999999999999998"/>
                                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circlebadge" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fst-FS-hFp">
-                                                <rect key="frame" x="23.666666666666686" y="2.6666666666666661" width="15.666666666666664" height="14.999999999999998"/>
+                                                <rect key="frame" x="23.666666666666657" y="2.6666666666666661" width="15.666666666666664" height="14.999999999999998"/>
                                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circlebadge" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="V7x-jp-o05">
@@ -107,14 +107,14 @@
             <objects>
                 <viewController id="hnl-6t-EGj" customClass="IntroViewController" customModule="Greenify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AEv-Fz-vIX">
-                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wQ8-fX-FnS">
-                                <rect key="frame" x="0.0" y="106" width="440" height="816"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CcK-Np-qhC" userLabel="logo">
-                                        <rect key="frame" x="0.0" y="0.0" width="440" height="138"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="120.66666666666667"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1024" translatesAutoresizingMaskIntoConstraints="NO" id="RJp-Ux-QpV">
                                                 <rect key="frame" x="10" y="10" width="156" height="106"/>
@@ -130,10 +130,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Du3-SS-4OX" userLabel="QR">
-                                        <rect key="frame" x="0.0" y="158" width="440" height="242.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="140.66666666666663" width="393" height="212.33333333333337"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="qrcode.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YGB-Wn-zwW">
-                                                <rect key="frame" x="120" y="22.333333333333314" width="200" height="198"/>
+                                                <rect key="frame" x="96.666666666666686" y="7" width="200" height="198"/>
                                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="TpV-rs-Re6"/>
@@ -147,10 +147,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a5J-JP-CEj" userLabel="Intro">
-                                        <rect key="frame" x="0.0" y="420.33333333333337" width="440" height="269"/>
+                                        <rect key="frame" x="0.0" y="373" width="393" height="236"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WL-6m-wBz">
-                                                <rect key="frame" x="70" y="34.666666666666629" width="300" height="200"/>
+                                                <rect key="frame" x="46.666666666666657" y="18" width="300" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="VCx-v5-aWz"/>
                                                     <constraint firstAttribute="height" constant="200" id="gFg-hn-vtp"/>
@@ -168,10 +168,10 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCS-cL-ypQ" userLabel="Circulo">
-                                        <rect key="frame" x="0.0" y="709.33333333333337" width="440" height="106.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="629" width="393" height="86"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="1mN-gq-0VN">
-                                                <rect key="frame" x="20" y="76.333333333333258" width="61" height="20.333333333333329"/>
+                                                <rect key="frame" x="20" y="55.666666666666636" width="61" height="20.333333333333336"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circlebadge" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lxD-v1-tju">
                                                         <rect key="frame" x="0.0" y="2.6666666666666661" width="15.666666666666666" height="14.999999999999998"/>
@@ -228,17 +228,17 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
             <objects>
                 <viewController storyboardIdentifier="RegistroViewController" id="bAL-CM-VVi" customClass="RegistroViewController" customModule="Greenify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xrv-pm-zTd">
-                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="8cZ-HP-zJE">
-                                <rect key="frame" x="0.0" y="106" width="440" height="816"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PB7-S0-FF6">
-                                        <rect key="frame" x="49.333333333333343" y="0.0" width="341.33333333333326" height="146"/>
+                                        <rect key="frame" x="26" y="0.0" width="341.33333333333337" height="127.66666666666667"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1024" translatesAutoresizingMaskIntoConstraints="NO" id="M7A-d8-Lpd">
-                                                <rect key="frame" x="0.0" y="0.0" width="341.33333333333331" height="146"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="341.33333333333331" height="127.66666666666667"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="Wsq-YH-33H"/>
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="i6n-Pa-kfY"/>
@@ -247,19 +247,19 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="mpm-JL-nlg">
-                                        <rect key="frame" x="95" y="186" width="250" height="208"/>
+                                        <rect key="frame" x="71.666666666666686" y="167.66666666666669" width="250" height="182.66666666666669"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="O1y-Nb-rti">
-                                                <rect key="frame" x="0.0" y="1.3333333333333321" width="18.666666666666668" height="30.333333333333339"/>
+                                                <rect key="frame" x="0.0" y="1.3333333333333321" width="18.666666666666668" height="26.333333333333336"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufo-PL-eCC">
-                                                <rect key="frame" x="0.0" y="35" width="42.666666666666664" height="33"/>
+                                                <rect key="frame" x="0.0" y="31" width="42.666666666666664" height="28.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gKZ-d6-7f6">
-                                                <rect key="frame" x="0.0" y="70" width="250" height="33"/>
+                                                <rect key="frame" x="0.0" y="61.666666666666622" width="250" height="28.666666666666664"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="nds-aO-Ksp"/>
@@ -269,16 +269,16 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                             </textField>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="key.horizontal" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wcv-SL-pVP">
-                                                <rect key="frame" x="0.0" y="108.66666666666666" width="25" height="26"/>
+                                                <rect key="frame" x="0.0" y="95.999999999999972" width="25" height="21.666666666666671"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gq2-nY-QdK">
-                                                <rect key="frame" x="0.0" y="140" width="88" height="33"/>
+                                                <rect key="frame" x="0.0" y="123.00000000000001" width="88" height="28.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Su8-Ge-5dX">
-                                                <rect key="frame" x="0.0" y="175" width="250" height="33"/>
+                                                <rect key="frame" x="0.0" y="153.66666666666663" width="250" height="29"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="rGp-EQ-u6e"/>
@@ -290,10 +290,10 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LsS-zk-O1M">
-                                        <rect key="frame" x="108.33333333333333" y="434" width="223.33333333333337" height="296.66666666666674"/>
+                                        <rect key="frame" x="85.000000000000014" y="390.33333333333326" width="223.33333333333337" height="259.66666666666674"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5r-XJ-sJV">
-                                                <rect key="frame" x="50.000000000000021" y="0.0" width="123.33333333333331" height="55.333333333333336"/>
+                                                <rect key="frame" x="49.999999999999993" y="0.0" width="123.33333333333331" height="48"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Iniciar seción">
                                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="17"/>
@@ -304,13 +304,13 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olvidaste tu contraseña?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbQ-ed-s7p">
-                                                <rect key="frame" x="17.666666666666671" y="60.333333333333371" width="188.33333333333331" height="55.333333333333343"/>
+                                                <rect key="frame" x="17.333333333333329" y="53.000000000000057" width="188.33333333333337" height="48"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zC8-SA-KFK">
-                                                <rect key="frame" x="11.333333333333343" y="120.66666666666661" width="201" height="55.333333333333329"/>
+                                                <rect key="frame" x="11" y="106.00000000000007" width="201" height="47.666666666666671"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="tinted" title="Crea una nueva cuenta">
                                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="17"/>
@@ -321,13 +321,13 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inicia sesión con otro metodo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnH-eM-2ob">
-                                                <rect key="frame" x="0.0" y="181" width="223.33333333333334" height="55.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="158.66666666666669" width="223.33333333333334" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyT-pz-ZJg">
-                                                <rect key="frame" x="77.666666666666671" y="241.3333333333334" width="68.000000000000014" height="55.333333333333343"/>
+                                                <rect key="frame" x="77.666666666666657" y="211.66666666666669" width="68" height="48"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="pngegg"/>
                                                 <connections>
@@ -337,10 +337,10 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mcn-JF-7E6">
-                                        <rect key="frame" x="29.666666666666657" y="770.66666666666663" width="381" height="45.333333333333371"/>
+                                        <rect key="frame" x="6" y="690" width="381" height="25"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="bottom" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="RWa-Sf-L7C">
-                                                <rect key="frame" x="20" y="20" width="61" height="20.333333333333329"/>
+                                                <rect key="frame" x="20" y="-0.33333333333337123" width="61" height="20.333333333333332"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circlebadge" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YrO-RY-4Eq">
                                                         <rect key="frame" x="0.0" y="2.6666666666666661" width="15.666666666666666" height="14.999999999999998"/>
@@ -351,7 +351,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                                         <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circlebadge.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lVl-Vq-fce">
-                                                        <rect key="frame" x="45.333333333333336" y="2.6666666666666661" width="15.666666666666664" height="14.999999999999998"/>
+                                                        <rect key="frame" x="45.333333333333329" y="2.6666666666666661" width="15.666666666666664" height="14.999999999999998"/>
                                                         <color key="tintColor" systemColor="systemGreenColor"/>
                                                     </imageView>
                                                 </subviews>
@@ -394,14 +394,14 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
             <objects>
                 <viewController id="NGe-HB-Cqf" customClass="CreacionViewController" customModule="Greenify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QTC-u5-T36">
-                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="QMr-eM-6Ak">
-                                <rect key="frame" x="0.0" y="106" width="440" height="816"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4BF-Re-x9v">
-                                        <rect key="frame" x="49.333333333333343" y="0.0" width="341.33333333333326" height="150"/>
+                                        <rect key="frame" x="26" y="0.0" width="341.33333333333337" height="150"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1024" translatesAutoresizingMaskIntoConstraints="NO" id="Uam-Sx-lTX">
                                                 <rect key="frame" x="0.0" y="0.0" width="341.33333333333331" height="150"/>
@@ -413,19 +413,19 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="EYq-t9-qDI">
-                                        <rect key="frame" x="95" y="165" width="250" height="474"/>
+                                        <rect key="frame" x="71.666666666666686" y="164.99999999999997" width="250" height="415.33333333333326"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Vry-ko-9GE">
-                                                <rect key="frame" x="0.0" y="1.3333333333333321" width="18.666666666666668" height="37"/>
+                                                <rect key="frame" x="0.0" y="1.3333333333333321" width="18.666666666666668" height="31.999999999999996"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sI-G2-g9O">
-                                                <rect key="frame" x="0.0" y="39.666666666666686" width="58.666666666666664" height="39.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="34.666666666666686" width="58.666666666666664" height="34.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ACJ-qe-9C3">
-                                                <rect key="frame" x="0.0" y="79" width="250" height="39.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="69.333333333333314" width="250" height="34.666666666666657"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="WLf-Rk-uFk"/>
@@ -435,16 +435,16 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="mail" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FMf-hW-xTW">
-                                                <rect key="frame" x="0.0" y="120.33333333333333" width="23.666666666666668" height="36.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="105.66666666666666" width="23.666666666666668" height="31.333333333333343"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQU-lF-kCj">
-                                                <rect key="frame" x="0.0" y="158" width="42.666666666666664" height="39.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="138.33333333333331" width="42.666666666666664" height="34.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PxD-Ji-1RH">
-                                                <rect key="frame" x="0.0" y="197.66666666666669" width="250" height="39.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="173" width="250" height="34.666666666666657"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="nrL-Gg-mP2"/>
@@ -454,16 +454,16 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                             </textField>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="key.horizontal" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Dhk-VX-3hM">
-                                                <rect key="frame" x="0.0" y="240.66666666666666" width="25" height="32.666666666666714"/>
+                                                <rect key="frame" x="0.0" y="211.33333333333334" width="25" height="27.666666666666686"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDs-LO-qJ1">
-                                                <rect key="frame" x="0.0" y="276.66666666666663" width="88" height="39.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="242.33333333333329" width="88" height="34.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CtU-we-H8q">
-                                                <rect key="frame" x="0.0" y="316" width="250" height="39.666666666666686"/>
+                                                <rect key="frame" x="0.0" y="277" width="250" height="34.666666666666686"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="4g4-bL-8q2"/>
@@ -473,16 +473,16 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="key.horizontal" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zfE-tI-etF">
-                                                <rect key="frame" x="0.0" y="359.33333333333331" width="25" height="32.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="315.33333333333331" width="25" height="27.333333333333314"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirma tu contraseña" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WO9-JU-cJW">
-                                                <rect key="frame" x="0.0" y="395" width="177" height="39.666666666666686"/>
+                                                <rect key="frame" x="0.0" y="346" width="177" height="34.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ns-Cm-UfA">
-                                                <rect key="frame" x="0.0" y="434.66666666666663" width="250" height="39.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="380.66666666666663" width="250" height="34.666666666666686"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="SV6-5E-NfZ"/>
@@ -494,10 +494,10 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="a6t-cP-yDl">
-                                        <rect key="frame" x="110.33333333333333" y="654" width="219.33333333333337" height="162"/>
+                                        <rect key="frame" x="87.000000000000014" y="595.33333333333337" width="219.33333333333337" height="119.66666666666663"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCb-Kb-x4K">
-                                                <rect key="frame" x="59.000000000000007" y="0.0" width="101.66666666666669" height="48.666666666666664"/>
+                                                <rect key="frame" x="58.666666666666664" y="0.0" width="101.66666666666669" height="36"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="tinted" title="Registrate">
                                                     <color key="baseBackgroundColor" red="0.60784313729999995" green="0.92549019610000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -507,13 +507,13 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O registrate con este método" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxi-bF-uqH">
-                                                <rect key="frame" x="0.0" y="50.666666666666629" width="219.33333333333334" height="27"/>
+                                                <rect key="frame" x="0.0" y="38" width="219.33333333333334" height="20"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzf-kf-jiD">
-                                                <rect key="frame" x="75.666666666666671" y="79.666666666666629" width="68.000000000000014" height="82.333333333333314"/>
+                                                <rect key="frame" x="75.666666666666657" y="60" width="68" height="59.666666666666657"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="pngegg"/>
                                                 <connections>
@@ -554,7 +554,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZiM-VX-pnO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SHq-8g-J3e">
-                        <rect key="frame" x="0.0" y="62" width="440" height="44"/>
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <navigationBarAppearance key="standardAppearance"/>
                         <navigationBarAppearance key="compactScrollEdgeAppearance"/>
@@ -576,14 +576,14 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="HEN-sp-fzM" customClass="HomeViewController" customModule="Greenify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l98-Fb-fPO">
-                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qv5-6P-ewq">
-                                <rect key="frame" x="0.0" y="171" width="440" height="54"/>
+                                <rect key="frame" x="0.0" y="146.66666666666666" width="393" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="FiA-Nw-BsO"/>
+                                    <constraint firstAttribute="height" constant="40" id="FiA-Nw-BsO"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="440" id="Otn-2W-ERA"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3Qf-Ve-b8t">
@@ -594,14 +594,14 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CarrucelCollectionViewCell" reuseIdentifier="CarrucelCollectionViewCell" id="sCf-Si-Rpa" customClass="CarrucelCollectionViewCell" customModule="Greenify" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="-8.6666666666666661" width="439" height="71"/>
+                                        <rect key="frame" x="0.0" y="-15.666666666666666" width="439" height="71"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pUO-9u-GXt">
                                             <rect key="frame" x="0.0" y="0.0" width="439" height="71"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZV-Pl-h6Y">
-                                                    <rect key="frame" x="23" y="21" width="100" height="30"/>
+                                                    <rect key="frame" x="23" y="20" width="416" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Q3Z-Kd-rFb"/>
                                                     </constraints>
@@ -612,9 +612,9 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                                 </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="jZV-Pl-h6Y" firstAttribute="top" secondItem="pUO-9u-GXt" secondAttribute="top" constant="20" id="3FX-rY-bKs"/>
                                                 <constraint firstItem="jZV-Pl-h6Y" firstAttribute="leading" secondItem="pUO-9u-GXt" secondAttribute="leading" constant="23" id="Alx-re-QyJ"/>
                                                 <constraint firstAttribute="trailing" secondItem="jZV-Pl-h6Y" secondAttribute="trailing" id="KQv-v1-Pep"/>
-                                                <constraint firstItem="jZV-Pl-h6Y" firstAttribute="top" secondItem="pUO-9u-GXt" secondAttribute="top" constant="10" id="hNH-7T-nh9"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="439" height="71"/>
@@ -625,16 +625,16 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GREENIFY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ou-xU-9eq">
-                                <rect key="frame" x="20.000000000000014" y="62" width="230.33333333333337" height="50.666666666666657"/>
+                                <rect key="frame" x="20.000000000000014" y="59" width="230.33333333333337" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50.670000000000002" id="oly-Gx-VxD"/>
+                                    <constraint firstAttribute="height" constant="40" id="oly-Gx-VxD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="45"/>
                                 <color key="textColor" red="0.019607843137254902" green="0.5725490196078431" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONOCE NUESTROS NUEVOS RETOS!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqE-j0-K4j">
-                                <rect key="frame" x="20" y="131.33333333333334" width="319" height="19"/>
+                                <rect key="frame" x="20" y="117.66666666666667" width="319" height="14.000000000000014"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="319" id="56e-iW-fcW"/>
                                 </constraints>
@@ -643,11 +643,9 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lxc-LG-vSp">
-                                <rect key="frame" x="20" y="233" width="400" height="618"/>
+                                <rect key="frame" x="20" y="201.66666666666669" width="353" height="545.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="618" id="baU-3t-YRo"/>
-                                    <constraint firstAttribute="width" constant="400" id="qwh-sU-wu2"/>
                                     <constraint firstAttribute="width" secondItem="lxc-LG-vSp" secondAttribute="height" multiplier="200:309" id="zaP-hM-VBZ"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KHy-61-Ftp">
@@ -658,7 +656,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainCollectionViewCell" id="igU-Ch-0AP" customClass="MainCollectionViewCell" customModule="Greenify" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="174" height="268"/>
+                                        <rect key="frame" x="89.666666666666671" y="0.0" width="174" height="268"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3jk-iL-PkL">
                                             <rect key="frame" x="0.0" y="0.0" width="174" height="268"/>
@@ -714,9 +712,9 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                             <constraint firstItem="lxc-LG-vSp" firstAttribute="leading" secondItem="2Fw-eg-6Qx" secondAttribute="leading" constant="20" id="8em-pC-vxe"/>
                             <constraint firstItem="qv5-6P-ewq" firstAttribute="leading" secondItem="2Fw-eg-6Qx" secondAttribute="leading" id="9QY-g8-aCA"/>
                             <constraint firstItem="2Fw-eg-6Qx" firstAttribute="bottom" secondItem="lxc-LG-vSp" secondAttribute="bottom" constant="22" id="GdM-4J-q3V"/>
-                            <constraint firstItem="qv5-6P-ewq" firstAttribute="top" secondItem="NqE-j0-K4j" secondAttribute="bottom" constant="20.670000000000002" id="IcV-aD-LmX"/>
+                            <constraint firstItem="qv5-6P-ewq" firstAttribute="top" secondItem="NqE-j0-K4j" secondAttribute="bottom" constant="15" id="IcV-aD-LmX"/>
                             <constraint firstItem="2Fw-eg-6Qx" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NqE-j0-K4j" secondAttribute="trailing" symbolic="YES" id="M5r-Mp-P7d"/>
-                            <constraint firstItem="lxc-LG-vSp" firstAttribute="top" secondItem="qv5-6P-ewq" secondAttribute="bottom" constant="8" symbolic="YES" id="QKY-sE-PES"/>
+                            <constraint firstItem="lxc-LG-vSp" firstAttribute="top" secondItem="qv5-6P-ewq" secondAttribute="bottom" constant="15" id="QKY-sE-PES"/>
                             <constraint firstItem="NqE-j0-K4j" firstAttribute="leading" secondItem="2Fw-eg-6Qx" secondAttribute="leading" constant="20" id="ZAc-zS-yxt"/>
                             <constraint firstItem="8Ou-xU-9eq" firstAttribute="top" secondItem="2Fw-eg-6Qx" secondAttribute="top" id="aBf-R4-ive"/>
                             <constraint firstItem="2Fw-eg-6Qx" firstAttribute="trailing" secondItem="lxc-LG-vSp" secondAttribute="trailing" constant="20" id="fDL-HY-rNx"/>
@@ -744,7 +742,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
             <objects>
                 <viewController id="eTA-dn-2wj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nLX-mu-BIb">
-                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="hxz-Wy-Co1"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
@@ -758,35 +756,55 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
         <!--View Controller-->
         <scene sceneID="gB2-QC-gL6">
             <objects>
-                <viewController id="w9t-1z-Ua7" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QRViewController" id="w9t-1z-Ua7" customClass="QRViewController" customModule="Greenify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9CO-yx-ySQ">
-                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ES HORA DE CUMPLIR RETOS!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oi-pm-AFv">
+                                <rect key="frame" x="37" y="73" width="319" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="25"/>
+                                <color key="textColor" red="0.60784313729999995" green="0.92549019610000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAC-YG-cc6">
+                                <rect key="frame" x="129" y="524" width="134" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="   Activa el scanner">
+                                    <imageReference key="image" image="qrcode.viewfinder" catalog="system" symbolScale="large"/>
+                                    <color key="baseBackgroundColor" red="0.019607843140000001" green="0.57254901960000004" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="scanQRCode:" destination="w9t-1z-Ua7" eventType="touchUpInside" id="iDl-7F-zdq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dCL-ej-R7O"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="camera.fill" catalog="system" selectedImage="camera.fill" id="7wg-b0-qHX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lkg-2p-ZCE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1109" y="1516"/>
+            <point key="canvasLocation" x="1107.6335877862596" y="1515.4929577464789"/>
         </scene>
         <!--Perfil View Controller-->
         <scene sceneID="4o3-U7-ekS">
             <objects>
                 <viewController storyboardIdentifier="PerfilViewController" id="nCv-ah-l1w" customClass="PerfilViewController" customModule="Greenify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="txW-eD-rrf">
-                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="Ofj-DX-hZ2">
-                                <rect key="frame" x="0.0" y="0.0" width="440" height="873"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KCx-LJ-8zT">
-                                        <rect key="frame" x="0.0" y="0.0" width="440" height="200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="son-i9-rUf">
-                                                <rect key="frame" x="0.0" y="0.0" width="440" height="200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
                                                 <color key="backgroundColor" red="0.95294117649999999" green="1" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="fPT-FL-I6B"/>
@@ -795,7 +813,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yqC-64-OzJ">
-                                        <rect key="frame" x="110" y="233" width="220" height="220"/>
+                                        <rect key="frame" x="86.666666666666686" y="233" width="220" height="220"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1024" translatesAutoresizingMaskIntoConstraints="NO" id="6wb-FQ-arX">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="220"/>
@@ -807,7 +825,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YhX-I9-trt">
-                                        <rect key="frame" x="175.66666666666666" y="486" width="88.999999999999972" height="28"/>
+                                        <rect key="frame" x="152" y="486" width="89" height="28"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dnu-PK-VpB">
                                                 <rect key="frame" x="0.0" y="0.0" width="89" height="28"/>
@@ -818,14 +836,14 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="VGo-Ih-eBS">
-                                        <rect key="frame" x="167.66666666666666" y="547" width="104.99999999999997" height="20.333333333333371"/>
+                                        <rect key="frame" x="144" y="547" width="105" height="19"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="mappin" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mW2-hE-k3h">
-                                                <rect key="frame" x="0.0" y="0.33333333333333215" width="16.333333333333332" height="19.666666666666668"/>
+                                                <rect key="frame" x="0.0" y="0.33333333333333215" width="16.333333333333332" height="18.333333333333336"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ubicación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCd-rM-TjO">
-                                                <rect key="frame" x="30.33333333333335" y="0.0" width="74.666666666666686" height="20.333333333333332"/>
+                                                <rect key="frame" x="30.33333333333335" y="0.0" width="74.666666666666686" height="19"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -833,14 +851,14 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="83" translatesAutoresizingMaskIntoConstraints="NO" id="XE5-0T-FV6">
-                                        <rect key="frame" x="155.33333333333337" y="600.33333333333337" width="129.66666666666663" height="24.666666666666629"/>
+                                        <rect key="frame" x="131.66666666666669" y="599" width="129.66666666666669" height="20.333333333333371"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ywj-S6-4En">
-                                                <rect key="frame" x="0.0" y="-0.33333333333333215" width="22" height="24.333333333333332"/>
+                                                <rect key="frame" x="0.0" y="-0.33333333333333215" width="22" height="19.999999999999996"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nG9-YY-eP0">
-                                                <rect key="frame" x="104.99999999999997" y="0.0" width="24.666666666666657" height="24.666666666666668"/>
+                                                <rect key="frame" x="105" y="0.0" width="24.666666666666657" height="20.333333333333332"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="22"/>
                                                 <nil key="textColor"/>
@@ -849,7 +867,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="zbJ-re-lLf">
-                                        <rect key="frame" x="121.33333333333333" y="658" width="197.33333333333337" height="19"/>
+                                        <rect key="frame" x="98.000000000000014" y="652.33333333333337" width="197.33333333333337" height="19"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seguidores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1Q-RK-IGj">
                                                 <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="19"/>
@@ -858,7 +876,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seguidos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8t-cM-ta8">
-                                                <rect key="frame" x="126.33333333333331" y="0.0" width="71" height="19"/>
+                                                <rect key="frame" x="126.33333333333334" y="0.0" width="71" height="19"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -866,10 +884,10 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XGd-0L-pog">
-                                        <rect key="frame" x="177.66666666666666" y="710" width="84.999999999999972" height="111"/>
+                                        <rect key="frame" x="154" y="704.33333333333337" width="85" height="12.666666666666629"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="UQm-vc-Gtb">
-                                        <rect key="frame" x="151" y="854" width="138.33333333333337" height="19"/>
+                                        <rect key="frame" x="127.33333333333333" y="750" width="138.33333333333337" height="19"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBX-vg-9jN">
                                                 <rect key="frame" x="0.0" y="0.0" width="75.666666666666671" height="19"/>
@@ -878,7 +896,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TikTok" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26O-I0-UvS">
-                                                <rect key="frame" x="89.666666666666657" y="0.0" width="48.666666666666657" height="19"/>
+                                                <rect key="frame" x="89.666666666666671" y="0.0" width="48.666666666666671" height="19"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -917,11 +935,11 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
             <objects>
                 <viewController storyboardIdentifier="LogrosViewController" id="5TS-ch-L1W" customClass="LogrosViewController" customModule="Greenify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pHC-Oe-OnJ">
-                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="r9Q-vL-6SK">
-                                <rect key="frame" x="12.666666666666671" y="93.333333333333314" width="245.33333333333331" height="100"/>
+                                <rect key="frame" x="-11" y="41.333333333333343" width="245.33333333333337" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GREENIFY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTr-NG-OMU">
                                         <rect key="frame" x="0.0" y="0.0" width="230.33333333333334" height="50.333333333333336"/>
@@ -930,7 +948,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LISTO PARA TU INSIGNIA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7B-kk-mw7">
-                                        <rect key="frame" x="0.0" y="77.333333333333329" width="245.33333333333334" height="22.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="77.333333333333343" width="245.33333333333334" height="22.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
                                         <color key="textColor" red="0.60784313729999995" green="0.92549019610000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -938,7 +956,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                 </subviews>
                             </stackView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1G-Zi-gti">
-                                <rect key="frame" x="16.666666666666657" y="260" width="407" height="613"/>
+                                <rect key="frame" x="-7" y="208" width="407" height="613"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="613" id="ifB-6E-UjB"/>
                                     <constraint firstAttribute="width" constant="407" id="k4a-4g-anT"/>
@@ -948,7 +966,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YE-Ba-Xzg">
-                                <rect key="frame" x="20" y="260" width="400" height="613"/>
+                                <rect key="frame" x="-3.6666666666666572" y="208" width="400.33333333333326" height="613"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="4E6-c9-YR9"/>
                                     <constraint firstAttribute="height" constant="613" id="HnN-0j-6dl"/>
@@ -958,7 +976,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T95-nY-CT9">
-                                <rect key="frame" x="20" y="260" width="404" height="613"/>
+                                <rect key="frame" x="-3.6666666666666572" y="208" width="404.33333333333326" height="613"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="404" id="FIv-lg-wnH"/>
                                     <constraint firstAttribute="height" constant="613" id="VoJ-rW-Jn8"/>
@@ -1165,14 +1183,14 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
         <scene sceneID="fRI-Ze-pS3">
             <objects>
                 <viewController title="LogrosTodos" id="ozF-55-33J" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="AUO-pS-7T9">
+                    <view key="view" contentMode="scaleToFill" id="AUO-pS-7T9">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="613"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Tc-zU-zNs">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Tc-zU-zNs">
                                 <rect key="frame" x="0.0" y="0.0" width="400" height="613"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ifd-Ch-3kt">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ifd-Ch-3kt">
                                         <rect key="frame" x="0.0" y="0.0" width="400" height="1200"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bici" translatesAutoresizingMaskIntoConstraints="NO" id="6fo-4W-m5y">
@@ -1444,7 +1462,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
             <objects>
                 <viewController title="LogrosProximos" id="Y3x-Rd-cdj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2zz-eQ-bwV">
-                        <rect key="frame" x="0.0" y="0.0" width="404" height="613"/>
+                        <rect key="frame" x="0.0" y="0.0" width="404.33333333333326" height="613"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bici" translatesAutoresizingMaskIntoConstraints="NO" id="L8k-nV-hXw">
@@ -1603,9 +1621,6 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
