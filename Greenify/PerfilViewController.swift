@@ -6,39 +6,78 @@
 //
 
 import UIKit
+import FirebaseFirestore
+import FirebaseAuth
 
-class PerfilViewController: UIViewController {
-
-    @IBOutlet weak var followButton: UIButton!
-    @IBOutlet weak var following: UILabel!
-    @IBOutlet weak var followers: UILabel!
-    @IBOutlet weak var location: UIStackView!
-    @IBOutlet weak var birthday: UILabel!
-    @IBOutlet weak var career: UILabel!
-    @IBOutlet weak var name: UIStackView!
-    @IBOutlet weak var profileImage: UIImageView!
-    @IBOutlet weak var topBackgroundView: UIView!
+class PerfilViewController: UIViewController, EditProfileViewControllerDelegate {
     
+    @IBOutlet weak var profileButton: UIButton!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var instagramButton: UIButton!
+    
+    private var instagramURL: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadProfileData()
         
-        profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
-        profileImage.clipsToBounds = true
-        profileImage.contentMode = .scaleAspectFill
+        // Configurar el menú
+        let editInfoAction = UIAction(title: "Edita tu información", image: UIImage(systemName: "pencil")) { [weak self] _ in
+            self?.performSegue(withIdentifier: "editProfileSegue", sender: nil)
+        }
+        let logoutAction = UIAction(title: "Cerrar sesión", image: UIImage(systemName: "arrowshape.turn.up.left")) { _ in
+            // Aquí puedes añadir la funcionalidad para cerrar sesión
+            print("Cerrar sesión")
+        }
         
-        // Do any additional setup after loading the view.
+        let menu = UIMenu(title: "Opciones", children: [editInfoAction, logoutAction])
+        
+        // Asignar el menú al botón del Storyboard
+        profileButton.menu = menu
+        profileButton.showsMenuAsPrimaryAction = true
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func didUpdateProfileData() {
+        loadProfileData() // Recargar los datos del perfil desde Firestore
     }
-    */
+    
+    private func loadProfileData() {
+        let db = Firestore.firestore()
+        let userId = Auth.auth().currentUser?.uid ?? ""
+        
+        db.collection("users").document(userId).getDocument { (document, error) in
+            if let document = document, document.exists {
+                let data = document.data()
+                self.nameLabel.text = data?["username"] as? String ?? "Sin nombre"
+                self.locationLabel.text = data?["location"] as? String ?? "Sin ubicación"
+                
+                // Configurar el enlace de Instagram
+                self.instagramURL = data?["instagram"] as? String ?? ""
+                //self.instagramButton.setTitle("Abrir Instagram", for: .normal)
+            } else {
+                print("Documento no encontrado o error: \(String(describing: error))")
+            }
+        }
+    }
+    
+    
+    @IBAction func openInstagram(_ sender: UIButton) {
+        guard let urlString = instagramURL, let url = URL(string: urlString), UIApplication.shared.canOpenURL(url) else {
+            print("URL inválida o no se puede abrir")
+            return
+        }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "editProfileSegue" {
+            // Configurar el `ViewController` de destino si es necesario
+            let editProfileVC = segue.destination as? EditProfileViewController
+            // Puedes pasar datos al `EditProfileViewController` aquí si lo necesitas
+            editProfileVC?.delegate = self // Asigna el delegado
+        }
+    }
 
 }
