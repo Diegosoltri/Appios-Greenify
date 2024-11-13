@@ -38,6 +38,12 @@
 		1F7A75772CB5CC60000029C6 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 1F7A75762CB5CC60000029C6 /* FirebaseAnalyticsOnDeviceConversion */; };
 		1F7A75792CB5CC60000029C6 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 1F7A75782CB5CC60000029C6 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		1F8132602CE12C8200BBF954 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F81325F2CE12C8200BBF954 /* EditProfileViewController.swift */; };
+		1F8132622CE1916100BBF954 /* Recompensas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8132612CE1916100BBF954 /* Recompensas.swift */; };
+		1F8132642CE1C9DD00BBF954 /* LogrosDesbloqueadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8132632CE1C9DD00BBF954 /* LogrosDesbloqueadosViewController.swift */; };
+		1F8132662CE1C9F500BBF954 /* LogrosTodosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8132652CE1C9F500BBF954 /* LogrosTodosViewController.swift */; };
+		1F8132682CE1CA0900BBF954 /* LogrosProximosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8132672CE1CA0900BBF954 /* LogrosProximosViewController.swift */; };
+		1F81326A2CE1CDD500BBF954 /* LogrosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8132692CE1CDD500BBF954 /* LogrosService.swift */; };
+		1F81326C2CE1D47800BBF954 /* LogroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F81326B2CE1D47800BBF954 /* LogroCell.swift */; };
 		1F8321C02CB5D86600F8D474 /* UsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8321BF2CB5D86600F8D474 /* UsuarioViewController.swift */; };
 		1F9301102CDEE73000E6EFB9 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 1F93010F2CDEE73000E6EFB9 /* CodeScanner */; };
 		1F9301122CDEE86900E6EFB9 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9301112CDEE86900E6EFB9 /* SwiftUIView.swift */; };
@@ -66,6 +72,12 @@
 		1F7A756D2CB3C376000029C6 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		1F7A756F2CB3C3B0000029C6 /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		1F81325F2CE12C8200BBF954 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		1F8132612CE1916100BBF954 /* Recompensas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recompensas.swift; sourceTree = "<group>"; };
+		1F8132632CE1C9DD00BBF954 /* LogrosDesbloqueadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogrosDesbloqueadosViewController.swift; sourceTree = "<group>"; };
+		1F8132652CE1C9F500BBF954 /* LogrosTodosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogrosTodosViewController.swift; sourceTree = "<group>"; };
+		1F8132672CE1CA0900BBF954 /* LogrosProximosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogrosProximosViewController.swift; sourceTree = "<group>"; };
+		1F8132692CE1CDD500BBF954 /* LogrosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogrosService.swift; sourceTree = "<group>"; };
+		1F81326B2CE1D47800BBF954 /* LogroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogroCell.swift; sourceTree = "<group>"; };
 		1F8321BF2CB5D86600F8D474 /* UsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioViewController.swift; sourceTree = "<group>"; };
 		1F9301112CDEE86900E6EFB9 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		1F9301152CDEEADE00E6EFB9 /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
@@ -135,10 +147,16 @@
 				1F9301172CDF26AE00E6EFB9 /* QRViewController.swift */,
 				1FF130B92CD9793D00D6757A /* MainCollectionViewCell.swift */,
 				649A7A2D2CD966970017A2BF /* LogrosViewController.swift */,
+				1F8132672CE1CA0900BBF954 /* LogrosProximosViewController.swift */,
+				1F8132652CE1C9F500BBF954 /* LogrosTodosViewController.swift */,
+				1F8132632CE1C9DD00BBF954 /* LogrosDesbloqueadosViewController.swift */,
+				1F81326B2CE1D47800BBF954 /* LogroCell.swift */,
 				649A7A1B2CD93A5B0017A2BF /* PerfilViewController.swift */,
 				1F51C2C62CB63EF600F392CD /* HomeViewController.swift */,
 				1F5519EC2CDE73BC002F168C /* ActivityDetailViewController.swift */,
 				1FB46F092CD98C0D005D452C /* ImageActividades.swift */,
+				1F8132612CE1916100BBF954 /* Recompensas.swift */,
+				1F8132692CE1CDD500BBF954 /* LogrosService.swift */,
 				1F51C2C42CB63D5200F392CD /* CreacionViewController.swift */,
 				1F8321BF2CB5D86600F8D474 /* UsuarioViewController.swift */,
 				1F7A756F2CB3C3B0000029C6 /* RegistroViewController.swift */,
@@ -232,20 +250,26 @@
 				1F5519ED2CDE73BC002F168C /* ActivityDetailViewController.swift in Sources */,
 				1F5CFF932C8637AF003A90C5 /* ViewController.swift in Sources */,
 				1F9301122CDEE86900E6EFB9 /* SwiftUIView.swift in Sources */,
+				1F8132682CE1CA0900BBF954 /* LogrosProximosViewController.swift in Sources */,
 				1FB46F0A2CD98C0D005D452C /* ImageActividades.swift in Sources */,
 				1F5CFF8F2C8637AF003A90C5 /* AppDelegate.swift in Sources */,
 				1F9301182CDF26AE00E6EFB9 /* QRViewController.swift in Sources */,
 				1F5CFF912C8637AF003A90C5 /* SceneDelegate.swift in Sources */,
+				1F81326C2CE1D47800BBF954 /* LogroCell.swift in Sources */,
 				1F8132602CE12C8200BBF954 /* EditProfileViewController.swift in Sources */,
 				1F51C2C72CB63EF600F392CD /* HomeViewController.swift in Sources */,
 				1F7A756E2CB3C376000029C6 /* IntroViewController.swift in Sources */,
 				1F51C2C52CB63D5200F392CD /* CreacionViewController.swift in Sources */,
 				649A7A2E2CD966970017A2BF /* LogrosViewController.swift in Sources */,
+				1F81326A2CE1CDD500BBF954 /* LogrosService.swift in Sources */,
+				1F8132622CE1916100BBF954 /* Recompensas.swift in Sources */,
 				649A7A1C2CD93A5B0017A2BF /* PerfilViewController.swift in Sources */,
 				1F4E07BA2CC7655800F74115 /* CarrucelCollectionViewCell.swift in Sources */,
 				1F9301162CDEEADE00E6EFB9 /* QRScannerViewController.swift in Sources */,
 				1FF130BA2CD9793D00D6757A /* MainCollectionViewCell.swift in Sources */,
 				1F7A75702CB3C3B0000029C6 /* RegistroViewController.swift in Sources */,
+				1F8132662CE1C9F500BBF954 /* LogrosTodosViewController.swift in Sources */,
+				1F8132642CE1C9DD00BBF954 /* LogrosDesbloqueadosViewController.swift in Sources */,
 				1F8321C02CB5D86600F8D474 /* UsuarioViewController.swift in Sources */,
 				1F4E07BC2CC76E4C00F74115 /* Actividades.swift in Sources */,
 			);

@@ -7,23 +7,71 @@
 
 import UIKit
 
-class LogrosTodosViewController: UIViewController {
-
+class LogrosTodosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var tableView: UITableView!
+    private var logros: [Logro] = []
+    private let logrosService = LogrosService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        print("View did load - iniciando carga de logros")
+        cargarTodosLosLogros()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func cargarTodosLosLogros() {
+        logrosService.obtenerLogros { [weak self] logros in
+            DispatchQueue.main.async {
+                print("Logros obtenidos desde el servicio: \(logros.count) logros encontrados.")
+                for (index, logro) in logros.enumerated() {
+                    print("Logro \(index):")
+                    print("Título: \(logro.titulo)")
+                    print("Estrellas actuales: \(logro.estrellasActuales)")
+                    print("Estrellas requeridas: \(logro.estrellasRequeridas)")
+                    print("Nombre de imagen: \(logro.imagenNombre)")
+                }
+                
+                self?.logros = logros
+                self?.actualizarUI()
+            }
+        }
     }
-    */
-
+    
+    private func actualizarUI() {
+        print("Actualizando UI - recargando datos en la tabla.")
+        tableView.reloadData()
+    }
+   
+    // MARK: - UITableViewDataSource
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("Número de filas en la sección \(section): \(logros.count)")
+        return logros.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "LogroCell", for: indexPath) as? LogroCell else {
+            print("Error: No se pudo dequeuer una celda LogroCell.")
+            return UITableViewCell()
+        }
+        
+        let logro = logros[indexPath.row]
+        print("Configurando celda para el logro en índice \(indexPath.row):")
+        print("Título: \(logro.titulo)")
+        print("Estrellas actuales: \(logro.estrellasActuales)")
+        print("Estrellas requeridas: \(logro.estrellasRequeridas)")
+        cell.configurarCon(logro: logro)
+        
+        return cell
+    }
+    
+    // MARK: - UITableViewDelegate (Opcional)
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        print("Celda seleccionada en el índice \(indexPath.row)")
+        // Puedes agregar una acción para la celda seleccionada aquí, si es necesario
+    }
 }
