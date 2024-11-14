@@ -77,7 +77,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ze1-T5-Twr" secondAttribute="trailing" id="F2n-Pj-EWd"/>
@@ -198,7 +198,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lY7-Lb-FS1"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="wQ8-fX-FnS" firstAttribute="top" secondItem="lY7-Lb-FS1" secondAttribute="top" id="N5v-pB-3VO"/>
@@ -738,21 +738,104 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
             </objects>
             <point key="canvasLocation" x="-462.27272727272731" y="1515.0627615062763"/>
         </scene>
-        <!--View Controller-->
+        <!--Consejo View Controller-->
         <scene sceneID="dnE-ll-JUn">
             <objects>
-                <viewController id="eTA-dn-2wj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConsejoViewController" id="eTA-dn-2wj" customClass="ConsejoViewController" customModule="Greenify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nLX-mu-BIb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GREENIFY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcm-hq-Jrv">
+                                <rect key="frame" x="16.000000000000014" y="59" width="230.33333333333337" height="40"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="45"/>
+                                <color key="textColor" red="0.019607843140000001" green="0.57254901960000004" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guía de cuidado del Medio Ambiente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDs-wZ-RUL">
+                                <rect key="frame" x="16" y="117" width="297" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="q5f-tK-HIc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" red="0.60784313729999995" green="0.92549019610000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Mje-Ns-75h">
+                                <rect key="frame" x="16" y="158" width="361" height="32"/>
+                                <segments>
+                                    <segment title="Movilidad"/>
+                                    <segment title="Energía"/>
+                                    <segment title="Consumo"/>
+                                    <segment title="Residuos"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.95294117649999999" green="1" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="switchViews:" destination="eTA-dn-2wj" eventType="valueChanged" id="QYZ-iX-Gsn"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKP-Ts-Az9">
+                                <rect key="frame" x="16" y="197" width="361" height="517"/>
+                                <connections>
+                                    <segue destination="yCK-aS-8m8" kind="embed" id="MVo-jF-mpt"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQD-sX-kMw">
+                                <rect key="frame" x="16" y="197" width="361" height="517"/>
+                                <connections>
+                                    <segue destination="Non-dN-JVW" kind="embed" id="HJW-eu-lgY"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7vR-wQ-GOc">
+                                <rect key="frame" x="16" y="197" width="361" height="517"/>
+                                <connections>
+                                    <segue destination="Bz1-X4-fYZ" kind="embed" id="src-NJ-DVa"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tEQ-3W-BuW">
+                                <rect key="frame" x="16" y="197" width="361" height="517"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="C5c-8N-7sd" kind="embed" id="8WB-pH-5Pa"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hxz-Wy-Co1"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hxz-Wy-Co1" firstAttribute="bottom" secondItem="CDs-wZ-RUL" secondAttribute="bottom" constant="638" id="1I7-Ih-FUo"/>
+                            <constraint firstItem="CDs-wZ-RUL" firstAttribute="top" secondItem="kcm-hq-Jrv" secondAttribute="bottom" constant="18" id="2Iq-vp-QtA"/>
+                            <constraint firstItem="7vR-wQ-GOc" firstAttribute="leading" secondItem="sKP-Ts-Az9" secondAttribute="leading" id="4hU-nz-EhI"/>
+                            <constraint firstItem="aQD-sX-kMw" firstAttribute="trailing" secondItem="sKP-Ts-Az9" secondAttribute="trailing" id="86a-w8-vAe"/>
+                            <constraint firstItem="aQD-sX-kMw" firstAttribute="leading" secondItem="sKP-Ts-Az9" secondAttribute="leading" id="HZ7-We-SUX"/>
+                            <constraint firstItem="kcm-hq-Jrv" firstAttribute="leading" secondItem="nLX-mu-BIb" secondAttribute="leadingMargin" id="IL7-Wb-8Dz"/>
+                            <constraint firstItem="aQD-sX-kMw" firstAttribute="top" secondItem="sKP-Ts-Az9" secondAttribute="top" id="M4R-P9-Bej"/>
+                            <constraint firstItem="7vR-wQ-GOc" firstAttribute="trailing" secondItem="sKP-Ts-Az9" secondAttribute="trailing" id="MDx-Vs-Dj4"/>
+                            <constraint firstItem="aQD-sX-kMw" firstAttribute="bottom" secondItem="sKP-Ts-Az9" secondAttribute="bottom" id="Q4N-xv-pVO"/>
+                            <constraint firstItem="kcm-hq-Jrv" firstAttribute="leading" secondItem="CDs-wZ-RUL" secondAttribute="leading" id="RMa-hu-tEw"/>
+                            <constraint firstItem="7vR-wQ-GOc" firstAttribute="bottom" secondItem="sKP-Ts-Az9" secondAttribute="bottom" id="Xtg-mg-Wo2"/>
+                            <constraint firstItem="sKP-Ts-Az9" firstAttribute="trailing" secondItem="Mje-Ns-75h" secondAttribute="trailing" id="ajx-6e-RpY"/>
+                            <constraint firstItem="sKP-Ts-Az9" firstAttribute="trailing" secondItem="nLX-mu-BIb" secondAttribute="trailingMargin" id="bRh-th-lGd"/>
+                            <constraint firstItem="hxz-Wy-Co1" firstAttribute="bottom" secondItem="sKP-Ts-Az9" secondAttribute="bottom" constant="55" id="iJz-C8-fic"/>
+                            <constraint firstItem="sKP-Ts-Az9" firstAttribute="leading" secondItem="CDs-wZ-RUL" secondAttribute="leading" id="kAk-ic-V9O"/>
+                            <constraint firstItem="kcm-hq-Jrv" firstAttribute="top" secondItem="hxz-Wy-Co1" secondAttribute="top" id="pVb-IX-WiB"/>
+                            <constraint firstItem="sKP-Ts-Az9" firstAttribute="leading" secondItem="Mje-Ns-75h" secondAttribute="leading" id="qFS-6w-TJw"/>
+                            <constraint firstItem="7vR-wQ-GOc" firstAttribute="top" secondItem="aQD-sX-kMw" secondAttribute="top" id="uhy-jw-oag"/>
+                            <constraint firstItem="sKP-Ts-Az9" firstAttribute="top" secondItem="Mje-Ns-75h" secondAttribute="bottom" constant="8" symbolic="YES" id="wfs-4H-gj5"/>
+                            <constraint firstItem="sKP-Ts-Az9" firstAttribute="top" secondItem="nLX-mu-BIb" secondAttribute="top" constant="197" id="yAg-1Z-n2R"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="photo" catalog="system" selectedImage="photo" id="zXS-5j-nag"/>
+                    <connections>
+                        <outlet property="Consumo" destination="7vR-wQ-GOc" id="AAD-G7-Lqp"/>
+                        <outlet property="Energia" destination="aQD-sX-kMw" id="nVi-GC-UtO"/>
+                        <outlet property="Movilidad" destination="sKP-Ts-Az9" id="uow-FV-FYc"/>
+                        <outlet property="Residuos" destination="tEQ-3W-BuW" id="Wto-8Q-23C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="owE-6v-FV8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="318" y="1516"/>
+            <point key="canvasLocation" x="316.79389312977099" y="1515.4929577464789"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gB2-QC-gL6">
@@ -1110,7 +1193,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gi-dG-IxP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="229.7709923664122" y="2267.605633802817"/>
+            <point key="canvasLocation" x="1143" y="2957"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="g77-bd-bV7">
@@ -1471,6 +1554,166 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
             </objects>
             <point key="canvasLocation" x="3453" y="2181"/>
         </scene>
+        <!--Movilidad-->
+        <scene sceneID="HzW-HJ-BSo">
+            <objects>
+                <viewController storyboardIdentifier="MovilidadViewController" title="Movilidad" id="yCK-aS-8m8" customClass="MovilidadViewController" customModule="Greenify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wv2-Dx-fWd">
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="517"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTD-u7-IpR">
+                                <rect key="frame" x="98" y="327" width="164" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="NUEVO CONSEJO">
+                                    <color key="baseBackgroundColor" red="0.95294117649999999" green="1" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="consejoBotonPresionado:" destination="yCK-aS-8m8" eventType="touchUpInside" id="ICm-Pd-agn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Consejo Movilidad" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n8c-aT-HXr">
+                                <rect key="frame" x="0.0" y="0.0" width="361" height="258"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="ConsejoBoton" destination="cTD-u7-IpR" id="ZXq-WQ-3Ih"/>
+                        <outlet property="ConsejoMovilidad" destination="n8c-aT-HXr" id="1iv-yo-K7j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rIb-9d-DoV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="290.83969465648852" y="2078.5211267605637"/>
+        </scene>
+        <!--Energia-->
+        <scene sceneID="0q2-xV-6XL">
+            <objects>
+                <viewController storyboardIdentifier="EnergiaViewController" title="Energia" id="Non-dN-JVW" customClass="EnergiaViewController" customModule="Greenify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MKt-sd-GsZ">
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="517"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Consejo Energia" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Wp-lw-X3l">
+                                <rect key="frame" x="0.0" y="0.0" width="361" height="258"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbZ-Xo-wpj">
+                                <rect key="frame" x="98" y="327" width="164" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="NUEVO CONSEJO">
+                                    <color key="baseBackgroundColor" red="0.95294117649999999" green="1" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="consejoBotonPresionado:" destination="Non-dN-JVW" eventType="touchUpInside" id="qoX-yw-L0S"/>
+                                    <action selector="consejoBotonPresionado:" destination="yCK-aS-8m8" eventType="touchUpInside" id="uJ7-DS-wXn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="ConsejoBotonEnergia" destination="wbZ-Xo-wpj" id="LRC-et-gEO"/>
+                        <outlet property="ConsejoEnergia" destination="1Wp-lw-X3l" id="Y2S-ZL-S5k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ObV-LY-daM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-411" y="2079"/>
+        </scene>
+        <!--Consumo-->
+        <scene sceneID="6XM-4E-sZq">
+            <objects>
+                <viewController storyboardIdentifier="ConsumoViewController" title="Consumo" id="Bz1-X4-fYZ" customClass="ConsumoViewController" customModule="Greenify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jbx-mg-Qcj">
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="517"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Consejo Consumo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.30000001192092896" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i2O-Qb-SeO">
+                                <rect key="frame" x="0.0" y="0.0" width="361" height="258"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlP-bH-v5D">
+                                <rect key="frame" x="98" y="327" width="164" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="NUEVO CONSEJO">
+                                    <color key="baseBackgroundColor" red="0.95294117649999999" green="1" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="consejoBotonPresionado:" destination="yCK-aS-8m8" eventType="touchUpInside" id="1Ov-XM-2dh"/>
+                                    <action selector="consejoBotonPresionado:" destination="Bz1-X4-fYZ" eventType="touchUpInside" id="8MK-6Q-r9H"/>
+                                    <action selector="consejoBotonPresionado:" destination="Non-dN-JVW" eventType="touchUpInside" id="F5r-ce-lcx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="ConsejoConsumo" destination="i2O-Qb-SeO" id="MIx-J1-H6r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DTB-WX-rRK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-411" y="2500"/>
+        </scene>
+        <!--Residuos-->
+        <scene sceneID="5Gg-Th-UAb">
+            <objects>
+                <viewController storyboardIdentifier="ResiduosViewController" title="Residuos" id="C5c-8N-7sd" customClass="ResiduosViewController" customModule="Greenify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tzg-YV-LCw">
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="517"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Consejo Residuos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.30000001192092896" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s2G-Am-aXb">
+                                <rect key="frame" x="0.0" y="0.0" width="361" height="258"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQB-5T-iZ7">
+                                <rect key="frame" x="98" y="327" width="164" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="NUEVO CONSEJO">
+                                    <color key="baseBackgroundColor" red="0.95294117649999999" green="1" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="consejoBotonPresionado:" destination="yCK-aS-8m8" eventType="touchUpInside" id="Qe6-oy-AsM"/>
+                                    <action selector="consejoBotonPresionado:" destination="Non-dN-JVW" eventType="touchUpInside" id="QsX-NL-WqV"/>
+                                    <action selector="consejoBotonPresionado:" destination="Bz1-X4-fYZ" eventType="touchUpInside" id="auP-PY-OBa"/>
+                                    <action selector="consejoBotonPresionado:" destination="C5c-8N-7sd" eventType="touchUpInside" id="sNY-RD-SRb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="ConsejoResiduos" destination="s2G-Am-aXb" id="ZpZ-Sg-Xts"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qYj-pl-eza" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="291" y="2500"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1024" width="341.33334350585938" height="341.33334350585938"/>
@@ -1497,10 +1740,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

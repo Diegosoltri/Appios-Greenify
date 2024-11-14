@@ -8,22 +8,39 @@
 import UIKit
 
 class ConsejoViewController: UIViewController {
+    
+    @IBOutlet weak var Movilidad: UIView!
+    @IBOutlet weak var Energia: UIView!
+    @IBOutlet weak var Consumo: UIView!
+    @IBOutlet weak var Residuos: UIView!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    @IBAction func switchViews(_ sender: UISegmentedControl) {
+            if sender.selectedSegmentIndex == 0 {
+                Movilidad.alpha = 1
+                Energia.alpha = 0
+                Consumo.alpha = 0
+                Residuos.alpha = 0
+            } else if sender.selectedSegmentIndex == 1{
+                Movilidad.alpha = 0
+                Energia.alpha = 1
+                Consumo.alpha = 0
+                Residuos.alpha = 0
+            } else if sender.selectedSegmentIndex == 2{
+                Movilidad.alpha = 0
+                Energia.alpha = 0
+                Consumo.alpha = 1
+                Residuos.alpha = 0
+            } else if sender.selectedSegmentIndex == 3{
+                Movilidad.alpha = 0
+                Energia.alpha = 0
+                Consumo.alpha = 0
+                Residuos.alpha = 1
+            }
+        }
 }

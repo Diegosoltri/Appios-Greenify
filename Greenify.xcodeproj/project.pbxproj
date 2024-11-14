@@ -55,6 +55,11 @@
 		1FF130BA2CD9793D00D6757A /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF130B92CD9793D00D6757A /* MainCollectionViewCell.swift */; };
 		649A7A1C2CD93A5B0017A2BF /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A7A1B2CD93A5B0017A2BF /* PerfilViewController.swift */; };
 		649A7A2E2CD966970017A2BF /* LogrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A7A2D2CD966970017A2BF /* LogrosViewController.swift */; };
+		64C63CF02CE5D54900EEA296 /* ConsejoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C63CEF2CE5D54900EEA296 /* ConsejoViewController.swift */; };
+		64C63CF22CE5DBF500EEA296 /* MovilidadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C63CF12CE5DBF500EEA296 /* MovilidadViewController.swift */; };
+		64C63CF42CE5E33700EEA296 /* EnergiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C63CF32CE5E33700EEA296 /* EnergiaViewController.swift */; };
+		64C63CF62CE5E5A700EEA296 /* ConsumoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C63CF52CE5E5A700EEA296 /* ConsumoViewController.swift */; };
+		64C63CF82CE5E7B600EEA296 /* ResiduosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C63CF72CE5E7B600EEA296 /* ResiduosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +96,11 @@
 		1FF130B92CD9793D00D6757A /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		649A7A1B2CD93A5B0017A2BF /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		649A7A2D2CD966970017A2BF /* LogrosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogrosViewController.swift; sourceTree = "<group>"; };
+		64C63CEF2CE5D54900EEA296 /* ConsejoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsejoViewController.swift; sourceTree = "<group>"; };
+		64C63CF12CE5DBF500EEA296 /* MovilidadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovilidadViewController.swift; sourceTree = "<group>"; };
+		64C63CF32CE5E33700EEA296 /* EnergiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergiaViewController.swift; sourceTree = "<group>"; };
+		64C63CF52CE5E5A700EEA296 /* ConsumoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumoViewController.swift; sourceTree = "<group>"; };
+		64C63CF72CE5E7B600EEA296 /* ResiduosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResiduosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +155,11 @@
 				1F5CFF922C8637AF003A90C5 /* ViewController.swift */,
 				1F5CFF972C8637B1003A90C5 /* Assets.xcassets */,
 				1F5CFF942C8637AF003A90C5 /* Main.storyboard */,
+				64C63CF72CE5E7B600EEA296 /* ResiduosViewController.swift */,
+				64C63CF52CE5E5A700EEA296 /* ConsumoViewController.swift */,
+				64C63CF32CE5E33700EEA296 /* EnergiaViewController.swift */,
+				64C63CF12CE5DBF500EEA296 /* MovilidadViewController.swift */,
+				64C63CEF2CE5D54900EEA296 /* ConsejoViewController.swift */,
 				1F37027B2CE5B80E00A7AE0F /* ImageCell.swift */,
 				1F3702792CE5B1AB00A7AE0F /* ImageSelectorViewController.swift */,
 				1F81325F2CE12C8200BBF954 /* EditProfileViewController.swift */,
@@ -257,13 +272,17 @@
 				1F5CFF932C8637AF003A90C5 /* ViewController.swift in Sources */,
 				1F9301122CDEE86900E6EFB9 /* SwiftUIView.swift in Sources */,
 				1F8132682CE1CA0900BBF954 /* LogrosProximosViewController.swift in Sources */,
+				64C63CF82CE5E7B600EEA296 /* ResiduosViewController.swift in Sources */,
 				1FB46F0A2CD98C0D005D452C /* ImageActividades.swift in Sources */,
 				1F5CFF8F2C8637AF003A90C5 /* AppDelegate.swift in Sources */,
 				1F9301182CDF26AE00E6EFB9 /* QRViewController.swift in Sources */,
 				1F5CFF912C8637AF003A90C5 /* SceneDelegate.swift in Sources */,
+				64C63CF42CE5E33700EEA296 /* EnergiaViewController.swift in Sources */,
 				1F81326C2CE1D47800BBF954 /* LogroCell.swift in Sources */,
 				1F8132602CE12C8200BBF954 /* EditProfileViewController.swift in Sources */,
+				64C63CF02CE5D54900EEA296 /* ConsejoViewController.swift in Sources */,
 				1F51C2C72CB63EF600F392CD /* HomeViewController.swift in Sources */,
+				64C63CF22CE5DBF500EEA296 /* MovilidadViewController.swift in Sources */,
 				1F37027C2CE5B80E00A7AE0F /* ImageCell.swift in Sources */,
 				1F7A756E2CB3C376000029C6 /* IntroViewController.swift in Sources */,
 				1F51C2C52CB63D5200F392CD /* CreacionViewController.swift in Sources */,
@@ -278,6 +297,7 @@
 				1F7A75702CB3C3B0000029C6 /* RegistroViewController.swift in Sources */,
 				1F8132662CE1C9F500BBF954 /* LogrosTodosViewController.swift in Sources */,
 				1F8132642CE1C9DD00BBF954 /* LogrosDesbloqueadosViewController.swift in Sources */,
+				64C63CF62CE5E5A700EEA296 /* ConsumoViewController.swift in Sources */,
 				1F8321C02CB5D86600F8D474 /* UsuarioViewController.swift in Sources */,
 				1F4E07BC2CC76E4C00F74115 /* Actividades.swift in Sources */,
 			);
