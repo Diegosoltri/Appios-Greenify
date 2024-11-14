@@ -807,8 +807,8 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45J-n6-d1w">
                                                 <rect key="frame" x="0.0" y="0.0" width="386.33333333333331" height="352.66666666666669"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6wb-FQ-arX">
-                                                        <rect key="frame" x="93.333333333333343" y="78.000000000000014" width="200.00000000000003" height="196.66666666666663"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6wb-FQ-arX">
+                                                        <rect key="frame" x="93.333333333333343" y="76.333333333333343" width="200.00000000000003" height="200.00000000000003"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="200" id="1Jd-Hi-ssY"/>
                                                             <constraint firstAttribute="width" constant="200" id="8AV-FG-eGF"/>
@@ -936,6 +936,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                         <outlet property="locationLabel" destination="wCd-rM-TjO" id="kdP-5g-Bjx"/>
                         <outlet property="nameLabel" destination="Dnu-PK-VpB" id="baq-5q-MpE"/>
                         <outlet property="profileButton" destination="ELF-j5-zou" id="KBu-MM-CG7"/>
+                        <outlet property="userImage" destination="6wb-FQ-arX" id="9ef-w1-gVw"/>
                         <segue destination="oc4-dd-ZOn" kind="show" identifier="editProfileSegue" id="N0f-Fj-U9E"/>
                     </connections>
                 </viewController>
@@ -1046,6 +1047,71 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
             </objects>
             <point key="canvasLocation" x="544" y="704"/>
         </scene>
+        <!--Image Selector View Controller-->
+        <scene sceneID="Q3g-Do-C74">
+            <objects>
+                <viewController storyboardIdentifier="ImageSelectorViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OqA-zK-QFC" customClass="ImageSelectorViewController" customModule="Greenify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c71-MH-zWo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nkn-d2-HGW">
+                                <rect key="frame" x="16" y="59" width="361" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iIU-MQ-DBN">
+                                    <size key="itemSize" width="158" height="173"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="mym-Ya-FSa" customClass="ImageCell" customModule="Greenify" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="10P-57-urB">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h51-2M-Zm6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="TT1-Df-Gal"/>
+                                                        <constraint firstAttribute="height" constant="150" id="u7D-JD-ZEY"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="h51-2M-Zm6" firstAttribute="leading" secondItem="10P-57-urB" secondAttribute="leading" id="Gff-vX-DCm"/>
+                                                <constraint firstItem="h51-2M-Zm6" firstAttribute="top" secondItem="10P-57-urB" secondAttribute="top" id="M2T-00-Wt7"/>
+                                                <constraint firstAttribute="trailing" secondItem="h51-2M-Zm6" secondAttribute="trailing" id="ODR-n5-iOT"/>
+                                                <constraint firstAttribute="bottom" secondItem="h51-2M-Zm6" secondAttribute="bottom" id="qtf-f8-4XP"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="150" height="150"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="h51-2M-Zm6" id="Fgm-fY-0fN"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Aj2-uK-8Wt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nkn-d2-HGW" firstAttribute="top" secondItem="Aj2-uK-8Wt" secondAttribute="top" id="1fT-rN-4np"/>
+                            <constraint firstItem="Aj2-uK-8Wt" firstAttribute="trailing" secondItem="nkn-d2-HGW" secondAttribute="trailing" constant="16" id="QaM-2v-yMB"/>
+                            <constraint firstItem="nkn-d2-HGW" firstAttribute="leading" secondItem="Aj2-uK-8Wt" secondAttribute="leading" constant="16" id="Tdc-JC-YKf"/>
+                            <constraint firstItem="nkn-d2-HGW" firstAttribute="bottom" secondItem="Aj2-uK-8Wt" secondAttribute="bottom" id="YCV-H0-BIl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="nkn-d2-HGW" id="pDC-1V-rUk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2gi-dG-IxP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229.7709923664122" y="2267.605633802817"/>
+        </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="g77-bd-bV7">
             <objects>
@@ -1091,12 +1157,6 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                 <rect key="frame" x="16" y="273.66666666666652" width="40" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="51u-Bj-wIq">
-                                <rect key="frame" x="64" y="345" width="313" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uHL-eB-LRA">
                                 <rect key="frame" x="16" y="344.66666666666652" width="40" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1108,6 +1168,15 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                 <buttonConfiguration key="configuration" style="filled" title="Guardar"/>
                                 <connections>
                                     <action selector="saveButtonTapped:" destination="oc4-dd-ZOn" eventType="touchUpInside" id="LaD-0u-iKs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eX1-4g-lUY">
+                                <rect key="frame" x="64" y="342" width="313" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                <connections>
+                                    <action selector="changeImageButtonTapped:" destination="oc4-dd-ZOn" eventType="touchUpInside" id="lHV-SD-9tj"/>
                                 </connections>
                             </button>
                         </subviews>

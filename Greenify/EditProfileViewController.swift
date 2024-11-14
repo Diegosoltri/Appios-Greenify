@@ -21,6 +21,7 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var instagramTextField: UITextField!
     
     weak var delegate: EditProfileViewControllerDelegate?
+    private var selectedImageName: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,15 @@ class EditProfileViewController: UIViewController {
     
     @IBAction func saveButtonTapped(_ sender: UIButton) {
         saveProfileData()
+    }
+    
+    
+    @IBAction func changeImageButtonTapped(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let imageSelectorVC = storyboard.instantiateViewController(withIdentifier: "ImageSelectorViewController") as? ImageSelectorViewController {
+            imageSelectorVC.delegate = self // Asigna el delegado
+            present(imageSelectorVC, animated: true, completion: nil)
+        }
     }
     
     private func loadProfileData() {
@@ -48,6 +58,9 @@ class EditProfileViewController: UIViewController {
                 self.usernameTextField.text = data?["username"] as? String ?? ""
                 self.locationTextField.text = data?["location"] as? String ?? ""
                 self.instagramTextField.text = data?["instagram"] as? String ?? ""
+                if let profileImageName = data?["profileImage"] as? String {
+                    self.selectedImageName = profileImageName
+                }
             } else {
                 print("Documento no encontrado o error: \(String(describing: error))")
             }
@@ -55,32 +68,41 @@ class EditProfileViewController: UIViewController {
     }
 
     private func saveProfileData() {
-        // Referencia a Firestore
         let db = Firestore.firestore()
-        // Asegurarse de que userId no sea nil
         guard let userId = Auth.auth().currentUser?.uid else {
             print("Error: Usuario no autenticado")
             return
         }
         
-        // Datos a guardar
+        // Usar un nombre que identifique el ícono predeterminado, como "person.fill"
+        let profileImageToSave = selectedImageName ?? "person.fill"
         let profileData: [String: Any] = [
             "username": usernameTextField.text ?? "",
             "location": locationTextField.text ?? "",
-            "instagram": instagramTextField.text ?? ""
+            "instagram": instagramTextField.text ?? "",
+            "profileImage": profileImageToSave
         ]
         
-        // Guardar los datos en Firestore
         db.collection("users").document(userId).setData(profileData) { error in
             if let error = error {
                 print("Error al guardar los datos: \(error.localizedDescription)")
             } else {
                 print("Datos guardados correctamente")
-                // Puedes añadir una notificación de éxito
+                NotificationCenter.default.post(name: .profileImageUpdated, object: nil, userInfo: ["imageName": profileImageToSave])
                 self.delegate?.didUpdateProfileData()
                 self.dismiss(animated: true, completion: nil)
             }
         }
     }
 
+}
+
+extension EditProfileViewController: ImageSelectorDelegate {
+    func didSelectImage(named imageName: String) {
+        selectedImageName = imageName
+    }
+}
+
+extension Notification.Name {
+    static let profileImageUpdated = Notification.Name("profileImageUpdated")
 }

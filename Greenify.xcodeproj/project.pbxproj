@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1F1F97282CC09A4800544F4F /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 1F1F97272CC09A4800544F4F /* GoogleSignIn */; };
 		1F1F972A2CC09A4800544F4F /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1F1F97292CC09A4800544F4F /* GoogleSignInSwift */; };
+		1F37027A2CE5B1AB00A7AE0F /* ImageSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3702792CE5B1AB00A7AE0F /* ImageSelectorViewController.swift */; };
+		1F37027C2CE5B80E00A7AE0F /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37027B2CE5B80E00A7AE0F /* ImageCell.swift */; };
 		1F4E07BA2CC7655800F74115 /* CarrucelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E07B92CC7655800F74115 /* CarrucelCollectionViewCell.swift */; };
 		1F4E07BC2CC76E4C00F74115 /* Actividades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E07BB2CC76E4C00F74115 /* Actividades.swift */; };
 		1F51C2C52CB63D5200F392CD /* CreacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51C2C42CB63D5200F392CD /* CreacionViewController.swift */; };
@@ -56,6 +58,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F3702792CE5B1AB00A7AE0F /* ImageSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorViewController.swift; sourceTree = "<group>"; };
+		1F37027B2CE5B80E00A7AE0F /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		1F4E07B92CC7655800F74115 /* CarrucelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrucelCollectionViewCell.swift; sourceTree = "<group>"; };
 		1F4E07BB2CC76E4C00F74115 /* Actividades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actividades.swift; sourceTree = "<group>"; };
 		1F51C2C42CB63D5200F392CD /* CreacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreacionViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +145,8 @@
 				1F5CFF922C8637AF003A90C5 /* ViewController.swift */,
 				1F5CFF972C8637B1003A90C5 /* Assets.xcassets */,
 				1F5CFF942C8637AF003A90C5 /* Main.storyboard */,
+				1F37027B2CE5B80E00A7AE0F /* ImageCell.swift */,
+				1F3702792CE5B1AB00A7AE0F /* ImageSelectorViewController.swift */,
 				1F81325F2CE12C8200BBF954 /* EditProfileViewController.swift */,
 				1F9301112CDEE86900E6EFB9 /* SwiftUIView.swift */,
 				1F9301152CDEEADE00E6EFB9 /* QRScannerViewController.swift */,
@@ -258,12 +264,14 @@
 				1F81326C2CE1D47800BBF954 /* LogroCell.swift in Sources */,
 				1F8132602CE12C8200BBF954 /* EditProfileViewController.swift in Sources */,
 				1F51C2C72CB63EF600F392CD /* HomeViewController.swift in Sources */,
+				1F37027C2CE5B80E00A7AE0F /* ImageCell.swift in Sources */,
 				1F7A756E2CB3C376000029C6 /* IntroViewController.swift in Sources */,
 				1F51C2C52CB63D5200F392CD /* CreacionViewController.swift in Sources */,
 				649A7A2E2CD966970017A2BF /* LogrosViewController.swift in Sources */,
 				1F81326A2CE1CDD500BBF954 /* LogrosService.swift in Sources */,
 				1F8132622CE1916100BBF954 /* Recompensas.swift in Sources */,
 				649A7A1C2CD93A5B0017A2BF /* PerfilViewController.swift in Sources */,
+				1F37027A2CE5B1AB00A7AE0F /* ImageSelectorViewController.swift in Sources */,
 				1F4E07BA2CC7655800F74115 /* CarrucelCollectionViewCell.swift in Sources */,
 				1F9301162CDEEADE00E6EFB9 /* QRScannerViewController.swift in Sources */,
 				1FF130BA2CD9793D00D6757A /* MainCollectionViewCell.swift in Sources */,

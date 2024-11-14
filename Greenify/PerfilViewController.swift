@@ -15,6 +15,7 @@ class PerfilViewController: UIViewController, EditProfileViewControllerDelegate 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var instagramButton: UIButton!
+    @IBOutlet weak var userImage: UIImageView!
     
     private var instagramURL: String?
     
@@ -36,7 +37,12 @@ class PerfilViewController: UIViewController, EditProfileViewControllerDelegate 
         // Asignar el menú al botón del Storyboard
         profileButton.menu = menu
         profileButton.showsMenuAsPrimaryAction = true
-        
+        // Observar la notificación de actualización de imagen de perfil
+        NotificationCenter.default.addObserver(self, selector: #selector(updateProfileImage(_:)), name: .profileImageUpdated, object: nil)
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: .profileImageUpdated, object: nil)
     }
     
     func didUpdateProfileData() {
@@ -45,17 +51,34 @@ class PerfilViewController: UIViewController, EditProfileViewControllerDelegate 
     
     private func loadProfileData() {
         let db = Firestore.firestore()
-        let userId = Auth.auth().currentUser?.uid ?? ""
-        
-        db.collection("users").document(userId).getDocument { (document, error) in
+        guard let userId = Auth.auth().currentUser?.uid else {
+            print("Error: Usuario no autenticado")
+            return
+        }
+
+        db.collection("users").document(userId).getDocument { [weak self] (document, error) in
+            guard let self = self else { return }
             if let document = document, document.exists {
                 let data = document.data()
                 self.nameLabel.text = data?["username"] as? String ?? "Sin nombre"
                 self.locationLabel.text = data?["location"] as? String ?? "Sin ubicación"
-                
-                // Configurar el enlace de Instagram
                 self.instagramURL = data?["instagram"] as? String ?? ""
-                //self.instagramButton.setTitle("Abrir Instagram", for: .normal)
+
+                // Validar y cargar la imagen de perfil
+                if let profileImageName = data?["profileImage"] as? String, !profileImageName.isEmpty {
+                    if profileImageName == "person.fill" {
+                        // Mostrar el ícono de SF Symbols
+                        self.userImage.image = UIImage(systemName: "person.fill")
+                        self.userImage.tintColor = .gray // Cambia el color si lo deseas
+                    } else {
+                        // Mostrar una imagen personalizada
+                        self.userImage.image = UIImage(named: profileImageName)
+                    }
+                } else {
+                    // Si no hay imagen, asignar el ícono predeterminado
+                    self.userImage.image = UIImage(systemName: "person.fill")
+                    self.userImage.tintColor = .gray
+                }
             } else {
                 print("Documento no encontrado o error: \(String(describing: error))")
             }
@@ -79,5 +102,13 @@ class PerfilViewController: UIViewController, EditProfileViewControllerDelegate 
             editProfileVC?.delegate = self // Asigna el delegado
         }
     }
-
+    @objc private func updateProfileImage(_ notification: Notification) {
+        guard let userInfo = notification.userInfo,
+              let imageName = userInfo["imageName"] as? String else {
+            return
+        }
+        // Actualizar la imagen del perfil en tiempo real
+        userImage.image = UIImage(named: imageName)
+    }
 }
+
