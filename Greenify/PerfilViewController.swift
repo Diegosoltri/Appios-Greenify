@@ -29,7 +29,7 @@ class PerfilViewController: UIViewController, EditProfileViewControllerDelegate 
         }
         let logoutAction = UIAction(title: "Cerrar sesión", image: UIImage(systemName: "arrowshape.turn.up.left")) { _ in
             // Aquí puedes añadir la funcionalidad para cerrar sesión
-            print("Cerrar sesión")
+            self.logOut()
         }
         
         let menu = UIMenu(title: "Opciones", children: [editInfoAction, logoutAction])
@@ -110,5 +110,34 @@ class PerfilViewController: UIViewController, EditProfileViewControllerDelegate 
         // Actualizar la imagen del perfil en tiempo real
         userImage.image = UIImage(named: imageName)
     }
+    
+    // Método para cerrar sesión
+    private func logOut() {
+        do {
+            try Auth.auth().signOut()
+            print("Sesión cerrada correctamente")
+            navigateToLogin()
+        } catch let error {
+            print("Error al cerrar sesión: \(error.localizedDescription)")
+            showAlert(message: "No se pudo cerrar la sesión. Inténtalo de nuevo.")
+        }
+    }
+    
+    private func navigateToLogin() {
+        // Asegúrate de que el ViewController tiene el Storyboard ID configurado
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let loginVC = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController {
+            loginVC.modalPresentationStyle = .fullScreen // Mostrar en pantalla completa
+            present(loginVC, animated: true, completion: nil)
+        }
+    }
+    
+    private func showAlert(message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
+    }
+    
 }
 

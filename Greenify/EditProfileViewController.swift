@@ -66,8 +66,32 @@ class EditProfileViewController: UIViewController {
             }
         }
     }
+    
+    private func showAlert(message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
+    }
 
     private func saveProfileData() {
+        
+        // Validar campos obligatorios
+        guard let username = usernameTextField.text, !username.isEmpty else {
+            showAlert(message: "Por favor, ingresa un nombre de usuario.")
+            return
+        }
+        
+        guard let location = locationTextField.text, !location.isEmpty else {
+            showAlert(message: "Por favor, ingresa una ubicación.")
+            return
+        }
+        
+        guard let instagram = instagramTextField.text, !instagram.isEmpty else {
+            showAlert(message: "Por favor, ingresa un enlace de Instagram.")
+            return
+        }
+        
         let db = Firestore.firestore()
         guard let userId = Auth.auth().currentUser?.uid else {
             print("Error: Usuario no autenticado")
