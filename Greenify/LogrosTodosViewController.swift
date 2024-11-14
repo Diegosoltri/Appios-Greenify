@@ -17,11 +17,14 @@ class LogrosTodosViewController: UIViewController, UITableViewDataSource, UITabl
         tableView.dataSource = self
         tableView.delegate = self
         
+        // Observar la notificación de actualización de logros
+        NotificationCenter.default.addObserver(self, selector: #selector(cargarTodosLosLogros), name: .logrosActualizados, object: nil)
+        
         print("View did load - iniciando carga de logros")
         cargarTodosLosLogros()
     }
     
-    private func cargarTodosLosLogros() {
+    @objc private func cargarTodosLosLogros() {
         logrosService.obtenerLogros { [weak self] logros in
             DispatchQueue.main.async {
                 print("Logros obtenidos desde el servicio: \(logros.count) logros encontrados.")
@@ -43,8 +46,10 @@ class LogrosTodosViewController: UIViewController, UITableViewDataSource, UITabl
         print("Actualizando UI - recargando datos en la tabla.")
         tableView.reloadData()
     }
-   
-    // MARK: - UITableViewDataSource
+    deinit {
+        // Remover la observación de la notificación
+        NotificationCenter.default.removeObserver(self, name: .logrosActualizados, object: nil)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("Número de filas en la sección \(section): \(logros.count)")

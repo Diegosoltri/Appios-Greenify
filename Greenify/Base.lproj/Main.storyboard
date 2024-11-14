@@ -807,8 +807,8 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45J-n6-d1w">
                                                 <rect key="frame" x="0.0" y="0.0" width="386.33333333333331" height="352.66666666666669"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6wb-FQ-arX">
-                                                        <rect key="frame" x="93.333333333333343" y="76.333333333333343" width="200.00000000000003" height="200.00000000000003"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6wb-FQ-arX">
+                                                        <rect key="frame" x="93.333333333333343" y="78.000000000000014" width="200.00000000000003" height="196.66666666666663"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="200" id="1Jd-Hi-ssY"/>
                                                             <constraint firstAttribute="width" constant="200" id="8AV-FG-eGF"/>
@@ -1144,29 +1144,47 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="108"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Isu-mJ-pPb">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Isu-mJ-pPb">
                                                     <rect key="frame" x="16" y="0.0" width="122" height="108"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="108" id="sV6-Zs-Fme"/>
+                                                        <constraint firstAttribute="width" constant="122" id="zRw-7w-jmx"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Fjg-rr-f7m">
-                                                    <rect key="frame" x="146" y="66.666666666666671" width="227" height="4.3333333333333286"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Fjg-rr-f7m">
+                                                    <rect key="frame" x="146" y="65.333333333333329" width="227" height="4"/>
                                                 </progressView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4c-qi-ino">
-                                                    <rect key="frame" x="344.66666666666669" y="44" width="28.333333333333314" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4c-qi-ino">
+                                                    <rect key="frame" x="334.66666666666669" y="44" width="38.333333333333314" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo actividad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evm-op-RsZ">
-                                                    <rect key="frame" x="146" y="-18" width="117" height="82"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo actividad" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evm-op-RsZ">
+                                                    <rect key="frame" x="146" y="6.9999999999999991" width="93" height="15.666666666666664"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="93" id="64z-wU-8by"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15.67" id="FmW-Ke-0K1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Fjg-rr-f7m" firstAttribute="leading" secondItem="Isu-mJ-pPb" secondAttribute="trailing" constant="8" symbolic="YES" id="Atj-oY-MQ3"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Fjg-rr-f7m" secondAttribute="bottom" constant="27.670000000000002" id="Q7U-Fr-Rlj"/>
+                                                <constraint firstAttribute="bottom" secondItem="Isu-mJ-pPb" secondAttribute="bottom" id="QHF-E3-ZBD"/>
+                                                <constraint firstItem="Isu-mJ-pPb" firstAttribute="top" secondItem="7CJ-gq-sfg" secondAttribute="top" id="Sax-HW-3xP"/>
+                                                <constraint firstItem="Evm-op-RsZ" firstAttribute="leading" secondItem="Isu-mJ-pPb" secondAttribute="trailing" constant="8" symbolic="YES" id="T1O-ko-pBR"/>
+                                                <constraint firstItem="D4c-qi-ino" firstAttribute="top" secondItem="7CJ-gq-sfg" secondAttribute="topMargin" constant="33" id="gt8-Jd-KbB"/>
+                                                <constraint firstItem="Isu-mJ-pPb" firstAttribute="leading" secondItem="7CJ-gq-sfg" secondAttribute="leading" constant="16" id="khy-aB-S4Q"/>
+                                                <constraint firstItem="Fjg-rr-f7m" firstAttribute="trailing" secondItem="7CJ-gq-sfg" secondAttribute="trailingMargin" id="oEP-aU-rPz"/>
+                                                <constraint firstItem="D4c-qi-ino" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Isu-mJ-pPb" secondAttribute="trailing" constant="200" id="rOu-6K-B5W"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Evm-op-RsZ" secondAttribute="trailing" constant="20" symbolic="YES" id="sDQ-eq-Sk1"/>
+                                                <constraint firstItem="Evm-op-RsZ" firstAttribute="top" secondItem="7CJ-gq-sfg" secondAttribute="top" constant="7" id="yjm-eW-pgL"/>
+                                                <constraint firstItem="D4c-qi-ino" firstAttribute="trailing" secondItem="7CJ-gq-sfg" secondAttribute="trailingMargin" id="ytd-8b-J2a"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration" identifier="LogroCell">
                                             <bool key="isElement" value="YES"/>
@@ -1217,29 +1235,49 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="108"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L9E-6X-V3k">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L9E-6X-V3k">
                                                     <rect key="frame" x="16" y="0.0" width="122" height="108"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="108" id="rza-1G-ejy"/>
+                                                        <constraint firstAttribute="width" constant="122" id="yNY-70-DRh"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uAN-0c-97F">
-                                                    <rect key="frame" x="146" y="66.666666666666671" width="227" height="4.3333333333333286"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uAN-0c-97F">
+                                                    <rect key="frame" x="146" y="66.666666666666671" width="227" height="4"/>
                                                 </progressView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56H-Mm-Apb">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56H-Mm-Apb">
                                                     <rect key="frame" x="344.66666666666669" y="44" width="28.333333333333314" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo actividad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S09-c0-edv">
-                                                    <rect key="frame" x="146" y="-18" width="117" height="82"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo actividad" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S09-c0-edv">
+                                                    <rect key="frame" x="146" y="7" width="117" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="117" id="fFk-gE-f0S"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="23" id="yMO-em-wKm"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="L9E-6X-V3k" firstAttribute="top" secondItem="77d-e0-R2d" secondAttribute="top" id="0Hk-Xe-MoT"/>
+                                                <constraint firstItem="uAN-0c-97F" firstAttribute="leading" secondItem="L9E-6X-V3k" secondAttribute="trailing" constant="8" symbolic="YES" id="678-fx-LYD"/>
+                                                <constraint firstItem="L9E-6X-V3k" firstAttribute="leading" secondItem="77d-e0-R2d" secondAttribute="leading" constant="16" id="7nh-SK-cCK"/>
+                                                <constraint firstItem="uAN-0c-97F" firstAttribute="trailing" secondItem="77d-e0-R2d" secondAttribute="trailingMargin" id="G95-Ab-dLP"/>
+                                                <constraint firstItem="S09-c0-edv" firstAttribute="top" secondItem="77d-e0-R2d" secondAttribute="top" constant="7" id="LEi-LB-nK6"/>
+                                                <constraint firstItem="56H-Mm-Apb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="L9E-6X-V3k" secondAttribute="trailing" constant="8" symbolic="YES" id="Qsu-05-OMi"/>
+                                                <constraint firstItem="S09-c0-edv" firstAttribute="leading" secondItem="L9E-6X-V3k" secondAttribute="trailing" constant="8" symbolic="YES" id="TM8-n9-0l3"/>
+                                                <constraint firstAttribute="bottom" secondItem="L9E-6X-V3k" secondAttribute="bottom" id="UHH-gE-QCm"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="uAN-0c-97F" secondAttribute="bottom" constant="26.329999999999998" id="Wr5-L9-5D9"/>
+                                                <constraint firstItem="56H-Mm-Apb" firstAttribute="top" secondItem="77d-e0-R2d" secondAttribute="topMargin" constant="33" id="chg-Gj-tuV"/>
+                                                <constraint firstItem="uAN-0c-97F" firstAttribute="leading" secondItem="L9E-6X-V3k" secondAttribute="trailing" constant="8" symbolic="YES" id="g8U-up-A2X"/>
+                                                <constraint firstItem="uAN-0c-97F" firstAttribute="top" secondItem="56H-Mm-Apb" secondAttribute="bottom" constant="2.6699999999999999" id="jdZ-Dc-Jak"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="S09-c0-edv" secondAttribute="trailing" constant="20" symbolic="YES" id="k0O-an-cgK"/>
+                                                <constraint firstItem="56H-Mm-Apb" firstAttribute="trailing" secondItem="77d-e0-R2d" secondAttribute="trailingMargin" id="vXM-bL-xc3"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration" identifier="LogroCell">
                                             <bool key="isElement" value="YES"/>
@@ -1269,7 +1307,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7QI-Fb-O6H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2712" y="2181"/>
+            <point key="canvasLocation" x="2710.6870229007632" y="2180.6338028169016"/>
         </scene>
         <!--LogrosProximos-->
         <scene sceneID="I4S-5e-lYV">
@@ -1283,13 +1321,66 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                 <rect key="frame" x="0.0" y="59" width="393" height="468"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LogroCell" id="9fS-de-ojc" customClass="LogroCell" customModule="Greenify" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LogroCell" rowHeight="108" id="7XO-27-i8z" customClass="LogroCell" customModule="Greenify" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="108"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9fS-de-ojc" id="HKl-wi-euN">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7XO-27-i8z" id="gLU-47-DHs">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="108"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6pt-8L-jhP">
+                                                    <rect key="frame" x="16" y="0.0" width="122" height="108"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="122" id="Nwg-k3-J2d"/>
+                                                        <constraint firstAttribute="height" constant="108" id="xKA-yk-B3Q"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mrV-lz-e8Y">
+                                                    <rect key="frame" x="146" y="66.666666666666671" width="227" height="4"/>
+                                                </progressView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXy-53-Nuc">
+                                                    <rect key="frame" x="344.66666666666669" y="44" width="28.333333333333314" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo actividad" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVG-J6-8F2">
+                                                    <rect key="frame" x="146" y="7" width="117" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="117" id="Pim-qt-biN"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="23" id="aQG-Vv-dH2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mrV-lz-e8Y" firstAttribute="top" secondItem="eXy-53-Nuc" secondAttribute="bottom" constant="2.6699999999999999" id="1xg-hG-jiz"/>
+                                                <constraint firstItem="fVG-J6-8F2" firstAttribute="leading" secondItem="6pt-8L-jhP" secondAttribute="trailing" constant="8" symbolic="YES" id="8Df-XL-XbK"/>
+                                                <constraint firstItem="mrV-lz-e8Y" firstAttribute="trailing" secondItem="gLU-47-DHs" secondAttribute="trailingMargin" id="B3Z-Wl-IMp"/>
+                                                <constraint firstItem="mrV-lz-e8Y" firstAttribute="leading" secondItem="6pt-8L-jhP" secondAttribute="trailing" constant="8" symbolic="YES" id="Fld-jh-u6D"/>
+                                                <constraint firstItem="fVG-J6-8F2" firstAttribute="top" secondItem="gLU-47-DHs" secondAttribute="top" constant="7" id="KU0-Cc-Lqk"/>
+                                                <constraint firstItem="eXy-53-Nuc" firstAttribute="trailing" secondItem="gLU-47-DHs" secondAttribute="trailingMargin" id="Nwv-US-Cgp"/>
+                                                <constraint firstItem="mrV-lz-e8Y" firstAttribute="leading" secondItem="6pt-8L-jhP" secondAttribute="trailing" constant="8" symbolic="YES" id="U8M-Vj-OML"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fVG-J6-8F2" secondAttribute="trailing" constant="20" symbolic="YES" id="XiZ-Cb-av9"/>
+                                                <constraint firstItem="6pt-8L-jhP" firstAttribute="top" secondItem="gLU-47-DHs" secondAttribute="top" id="YNk-Sg-MLc"/>
+                                                <constraint firstItem="eXy-53-Nuc" firstAttribute="top" secondItem="gLU-47-DHs" secondAttribute="topMargin" constant="33" id="b4Y-Xg-LUM"/>
+                                                <constraint firstItem="6pt-8L-jhP" firstAttribute="leading" secondItem="gLU-47-DHs" secondAttribute="leading" constant="16" id="jfp-7s-kfL"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="mrV-lz-e8Y" secondAttribute="bottom" constant="26.329999999999998" id="vbB-sW-l9d"/>
+                                                <constraint firstItem="eXy-53-Nuc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6pt-8L-jhP" secondAttribute="trailing" constant="8" symbolic="YES" id="xyt-DG-CPA"/>
+                                                <constraint firstAttribute="bottom" secondItem="6pt-8L-jhP" secondAttribute="bottom" id="yI5-sO-dJg"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="LogroCell">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <connections>
+                                            <outlet property="estrellasLabel" destination="eXy-53-Nuc" id="PRs-MG-8HP"/>
+                                            <outlet property="logroImageView" destination="6pt-8L-jhP" id="YQU-m4-awF"/>
+                                            <outlet property="progresoView" destination="mrV-lz-e8Y" id="XHv-hD-4sP"/>
+                                            <outlet property="tituloLabel" destination="fVG-J6-8F2" id="egZ-3M-dUB"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1337,10 +1428,10 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
-            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

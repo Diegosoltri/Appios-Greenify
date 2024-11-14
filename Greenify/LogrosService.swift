@@ -116,6 +116,25 @@ class LogrosService {
         }
     }
     
+    // Función para actualizar un logro específico en Firebase
+    func actualizarLogroEnFirebase(logro: Logro) {
+        guard let userId = Auth.auth().currentUser?.uid else {
+            print("Error: Usuario no autenticado")
+            return
+        }
+
+        let logroRef = db.collection("users").document(userId).collection("logros").document(logro.titulo)
+        logroRef.updateData([
+            "estrellasActuales": logro.estrellasActuales
+        ]) { error in
+            if let error = error {
+                print("Error al actualizar logro en Firebase: \(error.localizedDescription)")
+            } else {
+                print("Logro actualizado en Firebase: \(logro.titulo)")
+            }
+        }
+    }
+    
     
     
     

@@ -44,7 +44,7 @@ class LogroCell: UITableViewCell {
         print("Progreso configurado en: \(progreso)")
 
         // Opcional: cambiar el color de `UIProgressView` cuando esté completo
-        progresoView?.progressTintColor = logro.estaDesbloqueado ? .green : .systemBlue
+        progresoView?.progressTintColor = logro.estaDesbloqueado ? UIColor(red: 5/255, green: 146/255, blue: 18/255, alpha: 1.0) : UIColor(red: 155/255, green: 236/255, blue: 0/255, alpha: 1.0)
         print("Color de progreso configurado en: \(progresoView?.progressTintColor?.description ?? "default")")
     }
     

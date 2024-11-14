@@ -8,6 +8,10 @@
 import SwiftUI
 import UIKit
 
+extension Notification.Name {
+    static let logrosActualizados = Notification.Name("logrosActualizados")
+}
+
 class QRScannerViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -41,18 +45,40 @@ class QRScannerViewController: UIViewController {
         addScanGuideView()
     }
     
-    // Método para manejar el código escaneado
     private func handleScannedCode(_ code: String) {
-        // Comprobar si el código escaneado coincide con algún título en `imageactividades`
-        if imageactividades.contains(where: { $0.tittle == code }) {
-            // Si es un QR válido, mostrar animación de éxito
-            showSuccessAnimation {
-                self.dismiss(animated: true, completion: nil)
-            }
-        } else {
-            // Si no es válido, mostrar animación de error
-            showErrorAnimation {
-                self.dismiss(animated: true, completion: nil)
+        let logrosService = LogrosService()
+        
+        // Obtener el logro más reciente de Firebase
+        logrosService.obtenerLogros { [weak self] logrosActualizados in
+            guard let self = self else { return }
+            
+            // Buscar el logro correspondiente al título del código QR escaneado
+            if let logro = logrosActualizados.first(where: { $0.titulo == code }) {
+                
+                // Calcular las nuevas estrellas actuales
+                let nuevasEstrellas = min(logro.estrellasActuales + logro.estrellasPorActividad, logro.estrellasRequeridas)
+                
+                // Actualizar el logro en Firebase
+                logrosService.actualizarLogroEnFirebase(logro: Logro(
+                    titulo: logro.titulo,
+                    imagenNombre: logro.imagenNombre,
+                    estrellasPorActividad: logro.estrellasPorActividad,
+                    estrellasRequeridas: logro.estrellasRequeridas,
+                    estrellasActuales: nuevasEstrellas
+                ))
+                
+                // Publicar una notificación de que los logros han cambiado
+                NotificationCenter.default.post(name: .logrosActualizados, object: nil)
+                
+                // Mostrar animación de éxito
+                self.showSuccessAnimation {
+                    self.dismiss(animated: true, completion: nil)
+                }
+            } else {
+                // Mostrar animación de error si el QR no es válido
+                self.showErrorAnimation {
+                    self.dismiss(animated: true, completion: nil)
+                }
             }
         }
     }

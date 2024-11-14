@@ -27,6 +27,9 @@ class LogrosDesbloqueadosViewController: UIViewController, UITableViewDataSource
         tableView.dataSource = self
         tableView.delegate = self
         
+        // Observar la notificación de actualización de logros
+        NotificationCenter.default.addObserver(self, selector: #selector(cargarLogrosDesbloqueados), name: .logrosActualizados, object: nil)
+        
         // Agregar el mensaje de "no hay logros" si la lista está vacía
         view.addSubview(mensajeVacioLabel)
         mensajeVacioLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -35,7 +38,7 @@ class LogrosDesbloqueadosViewController: UIViewController, UITableViewDataSource
         cargarLogrosDesbloqueados()
     }
     
-    private func cargarLogrosDesbloqueados() {
+    @objc private func cargarLogrosDesbloqueados() {
         logrosService.obtenerLogros { [weak self] logros in
             DispatchQueue.main.async {
                 // Filtrar solo los logros que están completamente desbloqueados
@@ -49,6 +52,10 @@ class LogrosDesbloqueadosViewController: UIViewController, UITableViewDataSource
         // Mostrar u ocultar el mensaje de "no hay logros" basado en si la lista está vacía o no
         mensajeVacioLabel.isHidden = !logros.isEmpty
         tableView.reloadData()
+    }
+    deinit {
+        // Remover la observación de la notificación
+        NotificationCenter.default.removeObserver(self, name: .logrosActualizados, object: nil)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
