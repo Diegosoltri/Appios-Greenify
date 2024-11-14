@@ -85,6 +85,13 @@ class PerfilViewController: UIViewController, EditProfileViewControllerDelegate 
         }
     }
     
+    @IBAction func shareButtonTapped(_ sender: UIButton) {
+        guard let screenshot = takeScreenshot() else {
+            print("No se pudo tomar la captura de pantalla")
+            return
+        }
+        shareImage(screenshot)
+    }
     
     @IBAction func openInstagram(_ sender: UIButton) {
         guard let urlString = instagramURL, let url = URL(string: urlString), UIApplication.shared.canOpenURL(url) else {
@@ -109,6 +116,21 @@ class PerfilViewController: UIViewController, EditProfileViewControllerDelegate 
         }
         // Actualizar la imagen del perfil en tiempo real
         userImage.image = UIImage(named: imageName)
+    }
+    
+    // Método para tomar la captura de pantalla
+    private func takeScreenshot() -> UIImage? {
+        let renderer = UIGraphicsImageRenderer(size: view.bounds.size)
+        return renderer.image { context in
+            view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
+        }
+    }
+    
+    // Método para abrir el menú de compartir
+    private func shareImage(_ image: UIImage) {
+        let activityController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        activityController.popoverPresentationController?.sourceView = self.view // Para iPads
+        present(activityController, animated: true, completion: nil)
     }
     
     // Método para cerrar sesión

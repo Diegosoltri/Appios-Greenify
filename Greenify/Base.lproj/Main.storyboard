@@ -909,14 +909,24 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                                             <imageReference key="image" image="gearshape.fill" catalog="system" symbolScale="large"/>
                                                         </state>
                                                     </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcU-WN-CwX">
+                                                        <rect key="frame" x="329.66666666666669" y="-3" width="48.333333333333314" height="34.333333333333336"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up.fill" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="shareButtonTapped:" destination="nCv-ah-l1w" eventType="touchUpInside" id="tLP-aF-myT"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="6wb-FQ-arX" firstAttribute="centerY" secondItem="45J-n6-d1w" secondAttribute="centerY" id="3fH-1u-5cY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qcU-WN-CwX" secondAttribute="trailing" constant="8.3300000000000001" id="Eub-1i-LIf"/>
                                                     <constraint firstItem="ELF-j5-zou" firstAttribute="top" secondItem="45J-n6-d1w" secondAttribute="top" constant="4" id="PV6-qj-uLF"/>
                                                     <constraint firstItem="6wb-FQ-arX" firstAttribute="centerX" secondItem="45J-n6-d1w" secondAttribute="centerX" id="RnR-ky-GOz"/>
+                                                    <constraint firstItem="qcU-WN-CwX" firstAttribute="top" secondItem="45J-n6-d1w" secondAttribute="top" constant="-3" id="SaE-og-ASa"/>
+                                                    <constraint firstItem="qcU-WN-CwX" firstAttribute="leading" secondItem="ELF-j5-zou" secondAttribute="trailing" constant="283.32999999999998" id="rKA-vD-4fe"/>
                                                     <constraint firstAttribute="bottom" secondItem="ELF-j5-zou" secondAttribute="bottom" constant="326.67000000000002" id="u4Y-M2-y3c"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ELF-j5-zou" secondAttribute="trailing" constant="340" id="yEM-oS-Wnw"/>
                                                     <constraint firstItem="ELF-j5-zou" firstAttribute="leading" secondItem="45J-n6-d1w" secondAttribute="leading" constant="20" id="yjs-nw-DL1"/>
                                                 </constraints>
                                             </view>
@@ -1257,7 +1267,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
                                 <rect key="frame" x="64" y="342" width="313" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Elige tu foto de perfil"/>
                                 <connections>
                                     <action selector="changeImageButtonTapped:" destination="oc4-dd-ZOn" eventType="touchUpInside" id="lHV-SD-9tj"/>
                                 </connections>
@@ -1738,6 +1748,7 @@ Participa en retos ambientales, conecta con personas comprometidas y transforma 
         <image name="photo.fill" catalog="system" width="128" height="93"/>
         <image name="pngegg" width="44" height="43"/>
         <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
+        <image name="square.and.arrow.up.fill" catalog="system" width="117" height="128"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="star.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
