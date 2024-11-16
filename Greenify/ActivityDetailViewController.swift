@@ -21,19 +21,30 @@ class ActivityDetailViewController: UIViewController {
             let titleLabel = UILabel()
             titleLabel.text = actividad.tittle
             titleLabel.textAlignment = .center
-            titleLabel.frame = CGRect(x: 20, y: 100, width: view.bounds.width - 40, height: 40)
+            titleLabel.font = UIFont.boldSystemFont(ofSize: 20)
+            titleLabel.frame = CGRect(x: 20, y: 50, width: view.bounds.width - 40, height: 40)
             view.addSubview(titleLabel)
                     
             let imageView = UIImageView(image: actividad.image)
             imageView.frame = CGRect(x: 20, y: 150, width: view.bounds.width - 40, height: 200)
             imageView.contentMode = .scaleAspectFit
             view.addSubview(imageView)
+            
+            // Configurar la descripción
+            let descriptionTextView = UITextView()
+            descriptionTextView.text = actividad.description
+            descriptionTextView.textAlignment = .justified
+            descriptionTextView.font = UIFont.systemFont(ofSize: 16)
+            descriptionTextView.isEditable = false
+            descriptionTextView.isScrollEnabled = true
+            descriptionTextView.frame = CGRect(x: 20, y: 370, width: view.bounds.width - 40, height: 200)
+            view.addSubview(descriptionTextView)
         }
         
         // Agregar un botón para cerrar el modal
         let closeButton = UIButton(type: .system)
         closeButton.setTitle("Cerrar", for: .normal)
-        closeButton.frame = CGRect(x: 20, y: 370, width: view.bounds.width - 40, height: 50)
+        closeButton.frame = CGRect(x: 20, y: 440, width: view.bounds.width - 40, height: 150)
         closeButton.addTarget(self, action: #selector(dismissModal), for: .touchUpInside)
         view.addSubview(closeButton)
     }
