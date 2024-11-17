@@ -26,7 +26,29 @@ class EditProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadProfileData()
-        // Do any additional setup after loading the view.
+        configureTextFields()
+        
+        // Agregar gesto para ocultar teclado
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc private func hideKeyboard() {
+        view.endEditing(true)
+    }
+    
+    private func configureTextFields() {
+        // Configurar el toolbar con el botón "Listo"
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(title: "Listo", style: .done, target: self, action: #selector(hideKeyboard))
+        toolbar.items = [flexSpace, doneButton]
+        
+        // Asignar el toolbar a los textFields
+        usernameTextField.inputAccessoryView = toolbar
+        locationTextField.inputAccessoryView = toolbar
+        instagramTextField.inputAccessoryView = toolbar
     }
     
     @IBAction func saveButtonTapped(_ sender: UIButton) {

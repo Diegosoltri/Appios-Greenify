@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0186112CEA6EC7005206AD /* riega.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F01860D2CEA6EC6005206AD /* riega.png */; };
+		1F0186122CEA6EC7005206AD /* composta.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0186082CEA6EC6005206AD /* composta.png */; };
+		1F0186132CEA6EC7005206AD /* reciclado.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F01860B2CEA6EC6005206AD /* reciclado.png */; };
+		1F0186142CEA6EC7005206AD /* auto.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0186052CEA6EC6005206AD /* auto.png */; };
+		1F0186152CEA6EC7005206AD /* camina.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0186072CEA6EC6005206AD /* camina.png */; };
+		1F0186162CEA6EC7005206AD /* vivero.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F01860F2CEA6EC6005206AD /* vivero.png */; };
+		1F0186172CEA6EC7005206AD /* desechos.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0186092CEA6EC6005206AD /* desechos.png */; };
+		1F0186182CEA6EC7005206AD /* residuos.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F01860C2CEA6EC6005206AD /* residuos.png */; };
+		1F0186192CEA6EC7005206AD /* energia.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F01860A2CEA6EC6005206AD /* energia.png */; };
+		1F01861A2CEA6EC7005206AD /* termo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F01860E2CEA6EC6005206AD /* termo.png */; };
+		1F01861B2CEA6EC7005206AD /* bici.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0186062CEA6EC6005206AD /* bici.png */; };
 		1F1F97282CC09A4800544F4F /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 1F1F97272CC09A4800544F4F /* GoogleSignIn */; };
 		1F1F972A2CC09A4800544F4F /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1F1F97292CC09A4800544F4F /* GoogleSignInSwift */; };
 		1F37027A2CE5B1AB00A7AE0F /* ImageSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3702792CE5B1AB00A7AE0F /* ImageSelectorViewController.swift */; };
@@ -63,6 +74,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F0186052CEA6EC6005206AD /* auto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = auto.png; sourceTree = "<group>"; };
+		1F0186062CEA6EC6005206AD /* bici.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bici.png; sourceTree = "<group>"; };
+		1F0186072CEA6EC6005206AD /* camina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camina.png; sourceTree = "<group>"; };
+		1F0186082CEA6EC6005206AD /* composta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = composta.png; sourceTree = "<group>"; };
+		1F0186092CEA6EC6005206AD /* desechos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = desechos.png; sourceTree = "<group>"; };
+		1F01860A2CEA6EC6005206AD /* energia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = energia.png; sourceTree = "<group>"; };
+		1F01860B2CEA6EC6005206AD /* reciclado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reciclado.png; sourceTree = "<group>"; };
+		1F01860C2CEA6EC6005206AD /* residuos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = residuos.png; sourceTree = "<group>"; };
+		1F01860D2CEA6EC6005206AD /* riega.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = riega.png; sourceTree = "<group>"; };
+		1F01860E2CEA6EC6005206AD /* termo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = termo.png; sourceTree = "<group>"; };
+		1F01860F2CEA6EC6005206AD /* vivero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vivero.png; sourceTree = "<group>"; };
 		1F3702792CE5B1AB00A7AE0F /* ImageSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorViewController.swift; sourceTree = "<group>"; };
 		1F37027B2CE5B80E00A7AE0F /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		1F4E07B92CC7655800F74115 /* CarrucelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrucelCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -131,6 +153,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0186102CEA6EC6005206AD /* QR Greenify */ = {
+			isa = PBXGroup;
+			children = (
+				1F0186052CEA6EC6005206AD /* auto.png */,
+				1F0186062CEA6EC6005206AD /* bici.png */,
+				1F0186072CEA6EC6005206AD /* camina.png */,
+				1F0186082CEA6EC6005206AD /* composta.png */,
+				1F0186092CEA6EC6005206AD /* desechos.png */,
+				1F01860A2CEA6EC6005206AD /* energia.png */,
+				1F01860B2CEA6EC6005206AD /* reciclado.png */,
+				1F01860C2CEA6EC6005206AD /* residuos.png */,
+				1F01860D2CEA6EC6005206AD /* riega.png */,
+				1F01860E2CEA6EC6005206AD /* termo.png */,
+				1F01860F2CEA6EC6005206AD /* vivero.png */,
+			);
+			path = "QR Greenify";
+			sourceTree = "<group>";
+		};
 		1F5CFF822C8637AF003A90C5 = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +227,7 @@
 				1FA18A552CC0C63200DE659A /* GoogleService-Info.plist */,
 				1F5CFF9C2C8637B1003A90C5 /* Info.plist */,
 				1F4E07B92CC7655800F74115 /* CarrucelCollectionViewCell.swift */,
+				1F0186102CEA6EC6005206AD /* QR Greenify */,
 			);
 			path = Greenify;
 			sourceTree = "<group>";
@@ -258,6 +299,17 @@
 				1F7770492CC0CEBA00629888 /* GoogleService-Info.plist in Resources */,
 				1F5CFF9B2C8637B1003A90C5 /* Base in Resources */,
 				1F5CFF962C8637AF003A90C5 /* Base in Resources */,
+				1F0186112CEA6EC7005206AD /* riega.png in Resources */,
+				1F0186122CEA6EC7005206AD /* composta.png in Resources */,
+				1F0186132CEA6EC7005206AD /* reciclado.png in Resources */,
+				1F0186142CEA6EC7005206AD /* auto.png in Resources */,
+				1F0186152CEA6EC7005206AD /* camina.png in Resources */,
+				1F0186162CEA6EC7005206AD /* vivero.png in Resources */,
+				1F0186172CEA6EC7005206AD /* desechos.png in Resources */,
+				1F0186182CEA6EC7005206AD /* residuos.png in Resources */,
+				1F0186192CEA6EC7005206AD /* energia.png in Resources */,
+				1F01861A2CEA6EC7005206AD /* termo.png in Resources */,
+				1F01861B2CEA6EC7005206AD /* bici.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,8 +21,32 @@ class CreacionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configureTextFields()
+        
+        // Agregar gesto para ocultar teclado
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(tapGesture)
 
         // Do any additional setup after loading the view.
+    }
+    
+    @objc private func hideKeyboard() {
+        view.endEditing(true)
+    }
+    
+    private func configureTextFields() {
+        // Configurar el toolbar con el botón "Listo"
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(title: "Listo", style: .done, target: self, action: #selector(hideKeyboard))
+        toolbar.items = [flexSpace, doneButton]
+        
+        // Asignar el toolbar a los textFields
+        emailTextField.inputAccessoryView = toolbar
+        passwordTextField.inputAccessoryView = toolbar
+        confirmPasswordTextField.inputAccessoryView = toolbar
     }
     
     @IBAction func registerButtonAction(_ sender: Any) {
