@@ -50,7 +50,7 @@ class CreacionViewController: UIViewController {
     }
     
     @IBAction func registerButtonAction(_ sender: Any) {
-        if let email = emailTextField.text, let password = passwordTextField.text, let confirmPassword = confirmPasswordTextField.text, password == confirmPassword, let usuario = usuarioTextField.text {
+        if let email = emailTextField.text, let password = passwordTextField.text, let confirmPassword = confirmPasswordTextField.text, password == confirmPassword {
             
             Auth.auth().createUser(withEmail: email, password: password){
                 (result, error) in
