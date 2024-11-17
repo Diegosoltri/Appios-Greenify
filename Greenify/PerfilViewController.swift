@@ -16,12 +16,14 @@ class PerfilViewController: UIViewController, EditProfileViewControllerDelegate 
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var instagramButton: UIButton!
     @IBOutlet weak var userImage: UIImageView!
+    @IBOutlet weak var starLabel: UILabel!
     
     private var instagramURL: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadProfileData()
+        observeTotalStars() // Observar cambios en las estrellas
         
         // Configurar el menú
         let editInfoAction = UIAction(title: "Edita tu información", image: UIImage(systemName: "pencil")) { [weak self] _ in
@@ -81,6 +83,32 @@ class PerfilViewController: UIViewController, EditProfileViewControllerDelegate 
                 }
             } else {
                 print("Documento no encontrado o error: \(String(describing: error))")
+            }
+        }
+    }
+    
+    private func observeTotalStars() {
+        let db = Firestore.firestore()
+        guard let userId = Auth.auth().currentUser?.uid else {
+            print("Error: Usuario no autenticado")
+            return
+        }
+
+        db.collection("users").document(userId).collection("logros").addSnapshotListener { [weak self] snapshot, error in
+            guard let self = self else { return }
+            if let error = error {
+                print("Error al observar los logros: \(error.localizedDescription)")
+                return
+            }
+
+            let totalStars = snapshot?.documents.reduce(0) { sum, document in
+                let data = document.data()
+                let estrellasActuales = data["estrellasActuales"] as? Int ?? 0
+                return sum + estrellasActuales
+            } ?? 0
+
+            DispatchQueue.main.async {
+                self.starLabel.text = "\(totalStars)"
             }
         }
     }
